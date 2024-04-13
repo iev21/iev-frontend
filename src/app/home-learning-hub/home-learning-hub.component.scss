@@ -1,0 +1,186 @@
+.learning{
+    padding: 30px 10%;
+    &__heading{
+        text-align: center;
+        font-size: 33px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        div{
+            font-weight: 700;
+            padding-right: 10px;
+        }
+    }
+    &__desc{
+        padding-top: 20px;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 30px;
+        span{
+            font-weight: 700;
+        }
+    }
+    &__subheading{
+        padding-top: 15px;
+        font-size: 22px;
+        font-weight: 700;
+    }
+    &__journey{
+        padding-top: 20px;
+        font-size: 14px;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+        .div{
+            height: 260px;
+            width: 170px;
+            background-size: cover; /* Cover the entire container */
+            background-position: center; /* Center the background image */
+            position: relative;
+            div{
+                font-size: 16px;
+                font-weight: 600;
+                position: absolute;
+                top: 50%;
+                left: 55%;
+                transform: translate(-50%,-50%);
+            }
+        }
+        .content{
+            width: 170px;
+            font-size: 12px;
+            font-weight: 500;  
+            text-align: center;          
+        }
+        .one{
+            background-image: url('../../assets/01.png');
+        }
+        .two{
+            background-image: url('../../assets/02.png');
+        }
+        .three{
+            background-image: url('../../assets/03.png');
+        }
+        .four{
+            background-image: url('../../assets/04.png');
+        }
+        .five{
+            background-image: url('../../assets/05.png');
+        }
+    }
+    &__joinus{
+        padding-top: 20px;
+        font-size: 22px;
+        font-weight: 700;
+    }
+    &__text{
+        padding-top: 10px;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 30px;
+        span{
+            font-weight: 700;
+        }
+    }
+    &__textfinal{
+        padding-top: 25px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    &__button{
+        padding-top: 10px;
+        font-weight: 700;
+        div{
+            width: 200px;
+            background-color: rgb(255, 191, 35);
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 15px 15px;
+            cursor: pointer;
+            color: black;
+            margin-top: 10px;
+            &:hover {
+              background-color: black;
+              color: rgb(255,191,35);
+            }
+        }
+        
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .learning{
+        padding: 10px 1%;
+        &__heading{
+            text-align: center;
+            font-size: 16px;
+            // font-weight: 700;
+        }
+        &__desc{
+            padding-top: 10px;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 30px;
+        }
+        &__subheading{
+            padding-top: 10px;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        &__journey{
+            padding-top: 40px;
+            font-size: 12px;
+            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__text{
+            display: none;
+        }
+        &__joinus{
+            padding-top: 20px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        &__text{
+            padding-top: 10px;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 20px;
+        }
+        &__textfinal{
+            padding-top: 25px;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        &__button{
+            padding-top: 10px;
+            font-weight: 700;
+            div{
+                width: 200px;
+                background-color: rgb(255, 191, 35);
+                border: none;
+                border-radius: 4px;
+                font-size: 12px;
+                font-weight: 700;
+                padding: 15px 15px;
+                cursor: pointer;
+                color: black;
+                margin-top: 10px;
+                &:hover {
+                  background-color: black;
+                  color: rgb(255,191,35);
+                }
+            }
+            
+    
+        }
+    }
+    
+
+}

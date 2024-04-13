@@ -1,0 +1,244 @@
+.video-container {
+    position: relative;
+    overflow: hidden;
+    &__desc{
+        position: relative;
+        padding: 30px 10% 30px 10%;
+        background-image: url('../../assets/journeyhome.png '); /* Path to your background image */
+        background-size: cover; /* Cover the entire container */
+        background-position: center; /* Center the background image */
+        &__text{
+            font-size: 18px;
+            font-weight: 400;
+            text-align: start;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+            margin: 0 auto;
+            display: inline-block;
+            span{
+                font-weight: 700;
+            }
+            @keyframes typing {
+                from {
+                width: 0;
+                }
+                to {
+                width: 100%;
+                }
+            }
+            @keyframes blink-caret {
+                from, to {
+                border-color: transparent;
+                }
+                50% {
+                // border-color: rgb(255, 191, 35);
+                }
+            }
+        }
+        &__obj{
+            display: flex;
+            width: 50%;
+            align-items: flex-end;
+            &__content{
+                padding: 0px 25px;
+                font-size: 16px;
+                font-weight: 500;
+                div{
+                    padding: 10px 0px;
+                    img{
+                        height: 39px;
+                        width: 39px;
+                    }
+                }
+            }
+        }
+        &__header{
+            font-size: 24px;
+            font-weight: 400;
+            text-align: start;
+            padding: 15px 0px;
+            span{
+                font-weight: 700;
+            }
+        }
+        &__started{
+            padding: 45px 0px 15px 0px;
+            align-items: center;
+            display: flex;
+            div{
+                background: rgb(255, 191, 35);
+                color: black;
+                cursor: pointer;
+                text-align: center;
+                border-radius: 6px;
+                padding: 14px 15px;
+                min-width: 150px;
+                max-width: 200px;
+                font-size: 15px;
+                font-weight: 700;
+                border: 2px solid black;
+                &:hover{
+                    color: rgb(255, 191, 35);
+                    background: black;
+                    transform: scale(1);
+                    transition: all .4s ease-in;
+                    cursor: pointer;
+                    border: 2px solid rgb(255, 191, 35);
+                }
+            }
+        }
+    }
+
+    &__video{
+        width: 100%;
+        position: relative;
+        height: 446px;
+        &__tag{
+            width: 100%;
+            opacity: 0.3;
+            height: calc(100% - 40px); /* Subtract 20px from top and bottom */
+            object-fit: cover; /* Ensure video fills the container */        
+        }
+        &__text{
+            position: absolute;
+            top: 40%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 10%;
+            &__left{
+                font-size: 38px;
+                width: 37%;
+                font-family: 'Space Grotesk', sans-serif;
+            }
+            &__right{
+                font-size: 16px;
+                width: 45%;
+                line-height: 30px;
+            }
+        }
+    }
+    .events{
+        padding: 30px 10%;
+        &__heading{
+            font-size: 24px;
+            font-weight: 600;
+            text-align: center;
+            padding: 30px 0px;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        &__container{
+            display: flex;
+            justify-content: space-between;
+            &__flex{
+                height: 400px;
+                width: 300px;
+                border: 2px solid rgb(223, 223, 223);
+                .button{
+                    cursor: pointer;
+                    padding: 10px 25px;
+                    color: white;
+                    width: 70px;
+                    text-align: center;
+                    font-size: 14px;
+                    margin: 0 auto;
+                    background:rgb(159 131 4);
+                }
+                &__heading{
+                    padding: 260px 30px 0px 30px;
+                    font-size: 20px;
+                }
+                &__subheading{
+                    padding: 20px 30px;
+                    font-size: 14px;
+                }
+
+            }
+
+        }
+    }
+
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .video-container{
+        padding: 0 2%;
+        &__desc{
+            position: relative;
+            padding: 20px 5px 10px 0px;
+            &__text{
+                font-size: 10px;
+                font-weight: 400;
+                animation: typing 2.5s steps(30, end), blink-caret .5s step-end infinite;
+                @keyframes blink-caret {
+                    from, to {
+                    border-color: transparent;
+                    }
+                    50% {
+                    border-color: rgb(255, 191, 35);
+                    }
+                }
+            }
+            &__started{
+                padding: 25px 0px 15px 0px;
+                align-items: center;
+                display: flex;
+                div{
+                    background: rgb(255, 191, 35);
+                    color: black;
+                    cursor: pointer;
+                    text-align: center;
+                    border-radius: 4px;
+                    padding: 12px 15px;
+                    min-width: 100px;
+                    max-width: 200px;
+                    font-size: 15px;
+                    font-weight: 700;
+                    border: 1.5px solid black;
+                }
+            }
+            &__obj{
+                height: 75px;
+                &__content{
+                    padding: 0px 10px;
+                    font-size: 13px;
+                    font-weight: 500;
+                    div{
+                        padding: 3px 0px;
+                        font-size: 10px;
+                        img{
+                            height: 20px;
+                            width: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        &__video{
+            width: 100%;
+            position: relative;
+            height: 330px;
+            &__tag{
+                width: 100%;
+                opacity: 0.2;
+                height: 330px;
+            }
+            &__text{
+                position: absolute;
+                top: 10%;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                &__left{
+                    font-size: 20px;
+                    width: 100%;
+                }
+                &__right{
+                    padding-top: 30px;
+                    font-size: 12px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+  }

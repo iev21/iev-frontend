@@ -1,0 +1,95 @@
+.course-card{
+    margin: 20px 10px;
+    width: 330px;
+    transition: transform .5s ease;     
+    box-sizing: border-box;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.15);
+    animation: slideIn .8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; /* Adjust duration and timing function */
+    &:hover{
+        transform: scale(1.1);
+        background: #ebebeb;
+        box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.15);
+    }
+    &__main{
+        border-top: 1px solid rgb(255, 255, 255);
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &:hover{
+            background: #ebebeb;
+        }
+    }
+    &__image{
+        height: 200px;
+        background: #f5e4d9;
+        img{
+            width: 100%;
+            object-fit: cover;
+            background-repeat: no-repeat;
+            background-size: contain;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+        }
+    }
+    
+    &__title{
+        text-align: start;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.25;
+    }
+    &__description{
+        font-size: 12px;
+        padding: 10px 0 0px 0px;
+        height: 53px;
+    }
+    &__info{
+        display: flex;
+        line-height: 1.2;
+        padding: 10px 0px 10px 0px;
+        .details{
+            font-size: 12px;
+            letter-spacing: 0.5px;
+        }
+        .heading{
+            font-size: 12px;
+            color: #838383;
+            letter-spacing: 1px;
+        }
+        .duration{
+            padding-left: 30px;
+        }
+    }
+    button{
+        padding: 10px 25px;
+        outline: none;
+        font-size: 12px;
+        background: rgb(159 131 4);
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    &__col{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 14px;
+        
+        span{
+            padding-left: 10px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,20 @@
+<div class="course-card">
+    <div class="course-card__image">
+                <img [src]="courseData.img" alt=""/>
+    </div>
+    <div class="course-card__main">
+        <div class="course-card__title">{{courseData.title}}</div>
+        <div class="course-card__description">{{courseData.description}}</div>
+        <div class="course-card__info">
+            <div>
+                <div class="heading">Price</div>
+                <div class="details">{{courseData.price}}</div>
+            </div>
+            <div class="duration">
+                <div class="heading">Duration</div>
+                <div class="details">{{courseData.duration}}</div>
+            </div>
+        </div>
+        <div><button (click)="readMore(courseData)">Read More</button></div>
+    </div>
+</div>
