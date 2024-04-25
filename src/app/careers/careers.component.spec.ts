@@ -1,26 +1,42 @@
-// careers.component.spec.ts
+import { Component } from '@angular/core';
 
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { CareersComponent } from './careers.component';
+@Component({
+  selector: 'app-careers',
+  templateUrl: './careers.component.html',
+  styleUrls: ['./careers.component.scss']
+})
+export class CareersComponent {
+  jobOpenings: any[] = [
+    { title: 'Software Engineer', description: 'We are seeking a talented software engineer...' },
+    { title: 'UI/UX Designer', description: 'We are looking for a creative UI/UX designer...' },
+    { title: 'Marketing Specialist', description: 'Join our marketing team to help promote our products...' }
+  ];
 
-describe('CareersComponent', () => {
-  let component: CareersComponent;
-  let fixture: ComponentFixture<CareersComponent>;
+  showApplicationModal: boolean = false;
+  selectedJob: any;
+  applicantName: string = '';
+  applicantEmail: string = '';
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ CareersComponent ]
-    })
-    .compileComponents();
-  });
+  openApplicationModal(job: any): void {
+    this.selectedJob = job;
+    this.showApplicationModal = true;
+  }
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(CareersComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+  closeModal(): void {
+    this.showApplicationModal = false;
+    // Reset form fields
+    this.applicantName = '';
+    this.applicantEmail = '';
+  }
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+  submitApplication(): void {
+    // Logic to submit application goes here
+    console.log('Application submitted:', {
+      job: this.selectedJob,
+      name: this.applicantName,
+      email: this.applicantEmail
+    });
+    // Close modal after submission
+    this.closeModal();
+  }
+}
