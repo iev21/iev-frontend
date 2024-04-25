@@ -21,6 +21,13 @@
             padding: 5px 5px 5px 10px;
             border-bottom: 3px solid black;
         }
+        .innertext{
+            background: transparent;
+            border-bottom: 3px solid transparent;
+            overflow-wrap: break-word;
+            font-size: 18px;
+            font-weight: 400;
+        }
     }
 }
 @media only screen and (max-width: 600px) {
