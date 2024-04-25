@@ -38,7 +38,7 @@ export class CareersComponent {
     console.log('Application submitted:', {
       job: this.selectedJob,
       name: this.applicantName,
-      email: this.applicantEmail
+      email: this.applicantEmail,
       phone: this.applicantPhone,
       resume: this.selectedResume
     });
