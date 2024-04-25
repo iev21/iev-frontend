@@ -30,6 +30,41 @@
         }
     }
 }
+/* Added by venu
+/* Style the header */
+.header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Style the testimonials container */
+.testimonials {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style each testimonial */
+.testimonials__div {
+    margin-bottom: 20px;
+    border-left: 4px solid #007bff; /* Change color as needed */
+    padding-left: 10px;
+}
+
+/* Style the bullet points */
+.testimonials__div div {
+    font-size: 20px;
+    color: #007bff; /* Change color as needed */
+    margin-bottom: 10px;
+}
+
+/* Style the testimonial text */
+.innertext {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
 @media only screen and (max-width: 600px) {
     .header{
         text-align: center;
