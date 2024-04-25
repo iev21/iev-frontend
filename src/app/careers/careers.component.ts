@@ -16,6 +16,8 @@ export class CareersComponent {
   selectedJob: any;
   applicantName: string = '';
   applicantEmail: string = '';
+  applicantPhone: string = '';
+  selectedResume: File | null = null;
 
   openApplicationModal(job: any): void {
     this.selectedJob = job;
@@ -27,6 +29,8 @@ export class CareersComponent {
     // Reset form fields
     this.applicantName = '';
     this.applicantEmail = '';
+    this.applicantPhone = '';
+    this.selectedResume = null;
   }
 
   submitApplication(): void {
@@ -35,8 +39,14 @@ export class CareersComponent {
       job: this.selectedJob,
       name: this.applicantName,
       email: this.applicantEmail
+      phone: this.applicantPhone,
+      resume: this.selectedResume
     });
     // Close modal after submission
     this.closeModal();
+  }
+onFileSelected(event: any): void {
+    // Handle file selection
+    this.selectedResume = event.target.files[0];
   }
 }
