@@ -33,27 +33,32 @@
 
     </div>
     <div class="form-container__section__form">
-      <form (ngSubmit)="submitForm()">
-        <div style="display: flex;">
-          <div class="form-group" style="padding: 0px 20px 0px 0px;width: 50%;">
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" name="firstName" [(ngModel)]="formData.firstName" required>
+      <ng-container *ngIf="!successMessage">
+        <form (ngSubmit)="submitForm()">
+          <div style="display: flex;">
+            <div class="form-group" style="padding: 0px 20px 0px 0px;width: 50%;">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" [(ngModel)]="formData.firstName" required>
+            </div>
+            <div class="form-group" style="padding: 0px 20px 0px 0px;width: 50%;">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" [(ngModel)]="formData.lastName" required>
+            </div>
           </div>
-          <div class="form-group" style="padding: 0px 20px 0px 0px;width: 50%;">
-            <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" name="lastName" [(ngModel)]="formData.lastName" required>
+          <div class="form-group">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" [(ngModel)]="formData.phoneNumber" required>
           </div>
-        </div>
-        <div class="form-group">
-          <label for="phoneNumber">Phone Number</label>
-          <input type="tel" id="phoneNumber" name="phoneNumber" [(ngModel)]="formData.phoneNumber" required>
-        </div>
-        <div class="form-group">
-          <label for="description">Message</label>
-          <textarea id="description" name="description" [(ngModel)]="formData.description" required></textarea>
-        </div>
-        <button type="submit" class="submit-button">Submit</button>
-    </form>
+          <div class="form-group">
+            <label for="description">Message</label>
+            <textarea id="description" name="description" [(ngModel)]="formData.description" required></textarea>
+          </div>
+          <button type="submit" class="submit-button">Submit</button>
+        </form>
+      </ng-container>
+      <div class="form-container__section__form" *ngIf="successMessage">
+        <img src="../../assets/successmessage.png"/>
+      </div>
     </div>
 
   </div>

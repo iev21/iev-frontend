@@ -9,6 +9,7 @@ import { AppService } from '../app.service';
   styleUrls: ['./form.component.scss']
 })
 export class FormComponent {
+  successMessage=false;
   constructor(public http: HttpClient,private apiService: AppService){
   }
   formData = {
@@ -23,6 +24,10 @@ export class FormComponent {
     // Make the HTTP POST request
     this.apiService.postData(this.formData).subscribe((response: any) => {
       console.log(response);
+      this.successMessage=true;
+      setTimeout(()=>{
+        this.successMessage=false
+      },5000)
     });
   }
 }
