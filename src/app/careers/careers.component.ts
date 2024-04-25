@@ -1,32 +1,23 @@
-// careers.component.ts
-
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-careers',
   templateUrl: './careers.component.html',
   styleUrls: ['./careers.component.scss']
 })
-export class CareersComponent implements OnInit {
-
+export class CareersComponent {
   jobOpenings: any[] = [
-    { title: 'Software Engineer', description: 'We are seeking a talented software engineer...', location: 'New York, NY' },
-    { title: 'UI/UX Designer', description: 'We are looking for a creative UI/UX designer...', location: 'San Francisco, CA' },
-    { title: 'Marketing Specialist', description: 'Join our marketing team to help promote our products...', location: 'Remote' }
+    { title: 'Software Engineer', description: 'We are seeking a talented software engineer...' },
+    { title: 'UI/UX Designer', description: 'We are looking for a creative UI/UX designer...' },
+    { title: 'Marketing Specialist', description: 'Join our marketing team to help promote our products...' }
   ];
 
   showApplicationModal: boolean = false;
   selectedJob: any;
   applicantName: string = '';
   applicantEmail: string = '';
-  applicantResume: any;
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-  apply(job: any): void {
+  openApplicationModal(job: any): void {
     this.selectedJob = job;
     this.showApplicationModal = true;
   }
@@ -36,7 +27,6 @@ export class CareersComponent implements OnInit {
     // Reset form fields
     this.applicantName = '';
     this.applicantEmail = '';
-    this.applicantResume = null;
   }
 
   submitApplication(): void {
@@ -44,11 +34,9 @@ export class CareersComponent implements OnInit {
     console.log('Application submitted:', {
       job: this.selectedJob,
       name: this.applicantName,
-      email: this.applicantEmail,
-      resume: this.applicantResume
+      email: this.applicantEmail
     });
     // Close modal after submission
     this.closeModal();
   }
-
 }
