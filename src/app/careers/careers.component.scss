@@ -63,6 +63,11 @@ button:hover {
   background-color: #fefefe;
   padding: 20px;
   border-radius: 5px;
+  display:flex;
+  flex-direction: column;
+}
+.form-group {
+  margin-bottom: 20px; /* Add margin between form groups */
 }
 
 .close {
