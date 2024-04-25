@@ -21,6 +21,10 @@
             <input type="text" id="name" name="name" [(ngModel)]="applicantName" required>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" [(ngModel)]="applicantEmail" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" [(ngModel)]="applicantPhone" required>
+            <label for="resume">Attach Resume:</label>
+            <input type="file" id="resume" name="resume" (change)="onFileSelected($event)" accept=".pdf,.doc,.docx" required>
             <button type="submit">Submit Application</button>
         </form>
     </div>
