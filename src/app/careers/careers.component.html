@@ -18,7 +18,7 @@
     <div *ngIf="showApplicationModal" class="modal">
         <div class="modal-content">
             <span class="close" (click)="closeModal()">&times;</span>
-            <h2>Apply for {{ selectedJob.title }}</h2>
+            <h2>Apply for {{ selectedJob?.title }}</h2>
             <form (submit)="submitApplication()">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" [(ngModel)]="applicantName" required>
