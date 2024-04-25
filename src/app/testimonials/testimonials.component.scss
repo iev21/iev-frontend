@@ -1,41 +1,32 @@
-/* Testimonials container */
-.testimonials {
+.header{
+    text-align: center;
+    font-size: 38px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+.testimonials{
     display: flex;
     justify-content: space-between;
     padding: 30px 10%;
-    overflow-y: auto; /* Set to 'scroll' if you want a scrollbar always visible */
-}
-
-/* Testimonial div */
-.testimonials__div {
-    border: 3px solid black;
-    height: 350px;
-    width: 280px;
-    border-radius: 30px;
-    overflow: hidden;
-    font-size: 22px;
-    font-weight: 700;
-    display: flex;
-    flex-direction: column;
-    margin-right: 20px; /* Add some margin between testimonials */
-}
-
-/* Testimonial header */
-.testimonials__div div {
-    background: rgb(255, 191, 35);
-    padding: 5px 10px;
-    border-bottom: 3px solid black;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-/* Testimonial content */
-.innertext {
-    background: transparent;
-    border-bottom: 3px solid transparent;
-    overflow-wrap: break-word;
-    font-size: 16px;
-    font-weight: normal;
-    padding: 10px;
-    flex-grow: 1; /* Allow the content to grow vertically */
+    &__div{
+        border: 3px solid black;
+        height: 350px;
+        width: 280px;
+        border-radius: 30px;
+        overflow: hidden;
+        font-size: 22px;
+        font-weight: 700;
+        div{
+            background: rgb(255, 191, 35);
+            padding: 5px 5px 5px 10px;
+            border-bottom: 3px solid black;
+        }
+        .innertext{
+            background: transparent;
+            border-bottom: 3px solid transparent;
+            overflow-wrap: break-word;
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
 }
