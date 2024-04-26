@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   templateUrl: './testimonials.component.html',
   styleUrls: ['./testimonials.component.scss']
 })
-export class EventsComponent {
+export class TestimonialsComponent {
   // Your existing component code goes here
 
   // Function to handle scrolling of testimonials
