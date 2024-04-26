@@ -87,6 +87,7 @@
         font-size: 20px;
         font-weight: 700;
     }
+    // Edit properties for iEV Learning Hub Button
     &__button{
         padding-top: 10px;
         font-weight: 700;
@@ -157,12 +158,13 @@
             font-weight: 500;
             line-height: 20px;
         }
-        &__textfinal{
+        &__textfinal{       
             padding-top: 25px;
             font-size: 16px;
             font-weight: 700;
         }
-        &__button{
+        // Edit properties for Get started Button
+        &__button{               
             padding-top: 10px;
             font-weight: 700;
             div{
