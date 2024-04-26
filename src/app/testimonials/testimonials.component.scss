@@ -11,7 +11,8 @@
 
 .testimonials {
     display: flex; /* Use flexbox layout */
-    animation: scroll 30s linear infinite; /* Animation for scrolling */
+    /* animation: scroll 30s linear infinite; /* Animation for scrolling */
+   transition: transform 0.3s ease; /* Smooth transition for scroll effect */
 }
 
 /* CSS for Arrows */
