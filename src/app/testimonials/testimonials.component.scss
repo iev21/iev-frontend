@@ -8,41 +8,10 @@
 }
 
 /* Testimonials Content */
-.testimonials {
-    display: flex; /* Display testimonials in a flex container */
-    transition: transform 0.3s ease; /* Smooth transition for scrolling */
-}
-
-/* Arrows */
-.arrow {
-    position: absolute; /* Position arrows */
-    top: 50%; /* Align arrows vertically */
-    transform: translateY(-50%); /* Adjust vertical alignment */
-    font-size: 24px; /* Adjust arrow size */
-    cursor: pointer; /* Add pointer cursor */
-    color: #333; /* Set arrow color */
-    z-index: 1; /* Ensure arrows are above testimonials */
-}
-
-.left-arrow {
-    left: 0; /* Position left arrow */
-}
-
-.right-arrow {
-    right: 0; /* Position right arrow */
-}
-
-/* Header Styles */
-.header{
-    text-align: center; /* Center-align text */
-    font-size: 38px; /* Set font size */
-    font-weight: 500; /* Set font weight */
-    padding-bottom: 30px; /* Add padding at the bottom */
-}
-
 /* Testimonials Styles */
 .testimonials{
     display: flex; /* Display testimonials in a flex container */
+    transition: transform 0.3s ease; /* Smooth transition for scrolling */
     justify-content: space-between; /* Distribute space evenly between testimonials */
     padding: 30px 10%; /* Add padding */
     
@@ -73,6 +42,33 @@
         }
     }
 }
+/* Arrows */
+.arrow {
+    position: absolute; /* Position arrows */
+    top: 50%; /* Align arrows vertically */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+    font-size: 24px; /* Adjust arrow size */
+    cursor: pointer; /* Add pointer cursor */
+    color: #333; /* Set arrow color */
+    z-index: 1; /* Ensure arrows are above testimonials */
+}
+
+.left-arrow {
+    left: 0; /* Position left arrow */
+}
+
+.right-arrow {
+    right: 0; /* Position right arrow */
+}
+
+/* Header Styles */
+.header{
+    text-align: center; /* Center-align text */
+    font-size: 38px; /* Set font size */
+    font-weight: 500; /* Set font weight */
+    padding-bottom: 30px; /* Add padding at the bottom */
+}
+
 
 /* Media Query for Small Screens */
 @media only screen and (max-width: 600px) {
