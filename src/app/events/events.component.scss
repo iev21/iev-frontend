@@ -1,4 +1,4 @@
-.events {
+.events{
     padding: 30px 10%;
     &__heading{
         font-size: 24px;
@@ -39,7 +39,7 @@
 }
 @media only screen and (max-width: 600px) {
     
-.events{
+        .events{
             padding: 30px 5%;
             &__heading{
                 padding: 10px 0px;
