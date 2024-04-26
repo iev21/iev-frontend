@@ -1,14 +1,16 @@
 /* Testimonials Container */
 .testimonials-container {
-    width: 100%; /* Adjust width as needed */
-    overflow-x: auto; /* Enable horizontal scrolling */
-    white-space: nowrap; /* Prevent testimonials from wrapping */
     position: relative; /* Position arrows */
+    display: flex; /* Display testimonials container as flex */
+    align-items: center; /* Align items vertically */
+    overflow: hidden; /* Hide overflowing testimonials */
+    width: 100%; /* Adjust width as needed */
 }
 
 /* Testimonials Content */
 .testimonials {
     display: flex; /* Display testimonials in a flex container */
+    transition: transform 0.3s ease; /* Smooth transition for scrolling */
 }
 
 /* Arrows */
@@ -19,6 +21,7 @@
     font-size: 24px; /* Adjust arrow size */
     cursor: pointer; /* Add pointer cursor */
     color: #333; /* Set arrow color */
+    z-index: 1; /* Ensure arrows are above testimonials */
 }
 
 .left-arrow {
