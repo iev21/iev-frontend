@@ -11,6 +11,24 @@
     display: inline-block; /* Display testimonials inline */
 }
 
+/* Arrows */
+.arrow {
+    position: absolute; /* Position arrows */
+    top: 50%; /* Align arrows vertically */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+    font-size: 24px; /* Adjust arrow size */
+    cursor: pointer; /* Add pointer cursor */
+    color: #333; /* Set arrow color */
+}
+
+.left-arrow {
+    left: 0; /* Position left arrow */
+}
+
+.right-arrow {
+    right: 0; /* Position right arrow */
+}
+
 /* Testimonial */
 
 .header {
@@ -49,23 +67,5 @@
             font-weight: 400; // Set font weight to 400 (normal)
         }
     }
-}
-
-/* Arrows */
-.arrow {
-    position: absolute; /* Position arrows */
-    top: 50%; /* Align arrows vertically */
-    transform: translateY(-50%); /* Adjust vertical alignment */
-    font-size: 24px; /* Adjust arrow size */
-    cursor: pointer; /* Add pointer cursor */
-    color: #333; /* Set arrow color */
-}
-
-.left-arrow {
-    left: 0; /* Position left arrow */
-}
-
-.right-arrow {
-    right: 0; /* Position right arrow */
 }
 
