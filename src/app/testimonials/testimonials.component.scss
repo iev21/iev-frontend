@@ -1,33 +1,39 @@
-.header{
-    text-align: center;
-    font-size: 38px;
-    font-weight: 500;
-    padding-bottom: 30px;
+// This SCSS code defines styles for a header and testimonials section.
+
+.header {
+    text-align: center; // Center-align text
+    font-size: 38px; // Set font size to 38 pixels
+    font-weight: 500; // Set font weight to 500 (medium)
+    padding-bottom: 30px; // Add bottom padding of 30 pixels
 }
-.testimonials{
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 10%;
-    overflow-y: auto; /* Add scroll for testimonials */
-    &__div{
-        border: 3px solid black;
-        height: 350px;
-        width: 280px;
-        border-radius: 30px;
-        overflow: hidden;
-        font-size: 22px;
-        font-weight: 700;
-        div{
-            background: rgb(255, 191, 35);
-            padding: 5px 5px 5px 10px;
-            border-bottom: 3px solid black;
+
+.testimonials {
+    display: flex; // Use flexbox layout
+    justify-content: space-between; // Align items with equal space between them
+    padding: 30px 10%; // Add padding of 30 pixels on the top and bottom, 10% of the container width on the left and right
+    overflow-y: auto; // Add vertical scroll if testimonials overflow the container
+
+    &__div {
+        border: 3px solid black; // Add a black border with a thickness of 3 pixels
+        height: 350px; // Set the height of each testimonial container to 350 pixels
+        width: 280px; // Set the width of each testimonial container to 280 pixels
+        border-radius: 30px; // Add border-radius to create rounded corners
+        overflow: hidden; // Hide content that overflows the container
+        font-size: 22px; // Set font size to 22 pixels
+        font-weight: 700; // Set font weight to 700 (bold)
+
+        div {
+            background: rgb(255, 191, 35); // Set background color to a shade of yellow
+            padding: 5px 5px 5px 10px; // Add padding inside the div
+            border-bottom: 3px solid black; // Add a black bottom border with a thickness of 3 pixels
         }
-        .innertext{
-            background: transparent;
-            border-bottom: 3px solid transparent;
-            overflow-wrap: break-word;
-            font-size: 18px;
-            font-weight: 400;
+
+        .innertext {
+            background: transparent; // Set background color to transparent
+            border-bottom: 3px solid transparent; // Add a transparent bottom border with a thickness of 3 pixels
+            overflow-wrap: break-word; // Allow long words to break and wrap to the next line
+            font-size: 18px; // Set font size to 18 pixels
+            font-weight: 400; // Set font weight to 400 (normal)
         }
     }
 }
