@@ -1,4 +1,4 @@
-// testimonials.component.ts (or relevant component file)
+// testimonials.component.ts
 
 import { Component } from '@angular/core';
 
@@ -9,12 +9,20 @@ import { Component } from '@angular/core';
 })
 export class TestimonialsComponent {
   
+  constructor() { }
+
   // Define the scrollTestimonials method
   scrollTestimonials(direction: string): void {
-    // Implement scrolling functionality here
-    console.log('Scrolling testimonials:', direction);
-  }
+    const testimonialsContainer = document.querySelector('.testimonials') as HTMLElement;
+    const testimonials = document.querySelectorAll('.testimonials__div') as NodeListOf
+    
+    NodeListOf<Element>;
+    
+    const testimonialsWidth = testimonials[0].clientWidth;
+    const scrollAmount = direction === 'left' ? -testimonialsWidth : testimonialsWidth;
 
-  // Other component code goes here
+    testimonialsContainer.scrollLeft += scrollAmount;
+  }
 }
+
 
