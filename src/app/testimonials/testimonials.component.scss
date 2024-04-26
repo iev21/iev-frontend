@@ -14,15 +14,17 @@
     animation: scroll 30s linear infinite; /* Animation for scrolling */
 }
 
-/* Arrows */
+/* CSS for Arrows */
 .arrow {
     position: absolute; /* Position arrows */
     top: 50%; /* Align arrows vertically */
     transform: translateY(-50%); /* Adjust vertical alignment */
     font-size: 24px; /* Adjust arrow size */
     cursor: pointer; /* Add pointer cursor */
+    background-color: rgba(255, 255, 255, 0.5); /* Add background color with transparency */
+    padding: 5px 10px; /* Add padding */
+    border-radius: 5px; /* Add border-radius for rounded corners */
     color: #333; /* Set arrow color */
-    z-index: 1; /* Ensure arrows are above testimonials */
 }
 
 .left-arrow {
@@ -31,6 +33,16 @@
 
 .right-arrow {
     right: 0; /* Position right arrow */
+}
+
+/* Keyframes for scrolling animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0); /* Start from initial position */
+    }
+    100% {
+        transform: translateX(-100%); /* Scroll to the left */
+    }
 }
 
 // This SCSS code defines styles for a header and testimonials section.
