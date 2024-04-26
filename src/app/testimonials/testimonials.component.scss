@@ -2,17 +2,59 @@
 .testimonials-container {
     width: 80%; /* Adjust width as needed */
     margin: 0 auto; /* Center container */
-    overflow: hidden; /* Hide overflow */
+    // overflow: hidden; /* Hide overflow */
     position: relative; /* Positioning context for absolute positioning */
     border: 1px solid #ccc; /* Add border around the testimonials */
     border-radius: 5px; /* Add border-radius for rounded corners */
     padding: 10px; /* Add padding */
+    overflow-x: auto; /* Add horizontal scroll if testimonials overflow the container */
+}
+
+//.testimonials {
+//    display: flex; /* Use flexbox layout */
+    /* animation: scroll 30s linear infinite; /* Animation for scrolling */
+//  transition: transform 0.3s ease; /* Smooth transition for scroll effect */
+// }
+
+// This SCSS code defines styles for a header and testimonials section.
+
+.header {
+    text-align: center; // Center-align text
+    font-size: 38px; // Set font size to 38 pixels
+    font-weight: 500; // Set font weight to 500 (medium)
+    padding-bottom: 30px; // Add bottom padding of 30 pixels
 }
 
 .testimonials {
-    display: flex; /* Use flexbox layout */
-    /* animation: scroll 30s linear infinite; /* Animation for scrolling */
-   transition: transform 0.3s ease; /* Smooth transition for scroll effect */
+    display: flex; // Use flexbox layout
+    justify-content: space-between; // Align items with equal space between them
+    transition: transform 0.3s ease; /* Smooth transition for scroll effect */
+    padding: 30px 10%; // Add padding of 30 pixels on the top and bottom, 10% of the container width on the left and right
+    overflow-y: auto; // Add vertical scroll if testimonials overflow the container
+
+    &__div {
+        border: 3px solid black; // Add a black border with a thickness of 3 pixels
+        height: 350px; // Set the height of each testimonial container to 350 pixels
+        width: 280px; // Set the width of each testimonial container to 280 pixels
+        border-radius: 30px; // Add border-radius to create rounded corners
+        overflow: hidden; // Hide content that overflows the container
+        font-size: 22px; // Set font size to 22 pixels
+        font-weight: 700; // Set font weight to 700 (bold)
+
+        div {
+            background: rgb(255, 191, 35); // Set background color to a shade of yellow
+            padding: 5px 5px 5px 10px; // Add padding inside the div
+            border-bottom: 3px solid black; // Add a black bottom border with a thickness of 3 pixels
+        }
+
+        .innertext {
+            background: transparent; // Set background color to transparent
+            border-bottom: 3px solid transparent; // Add a transparent bottom border with a thickness of 3 pixels
+            overflow-wrap: break-word; // Allow long words to break and wrap to the next line
+            font-size: 18px; // Set font size to 18 pixels
+            font-weight: 400; // Set font weight to 400 (normal)
+        }
+    }
 }
 
 /* CSS for Arrows */
@@ -43,46 +85,6 @@
     }
     100% {
         transform: translateX(-100%); /* Scroll to the left */
-    }
-}
-
-// This SCSS code defines styles for a header and testimonials section.
-
-.header {
-    text-align: center; // Center-align text
-    font-size: 38px; // Set font size to 38 pixels
-    font-weight: 500; // Set font weight to 500 (medium)
-    padding-bottom: 30px; // Add bottom padding of 30 pixels
-}
-
-.testimonials {
-    display: flex; // Use flexbox layout
-    justify-content: space-between; // Align items with equal space between them
-    padding: 30px 10%; // Add padding of 30 pixels on the top and bottom, 10% of the container width on the left and right
-    overflow-y: auto; // Add vertical scroll if testimonials overflow the container
-
-    &__div {
-        border: 3px solid black; // Add a black border with a thickness of 3 pixels
-        height: 350px; // Set the height of each testimonial container to 350 pixels
-        width: 280px; // Set the width of each testimonial container to 280 pixels
-        border-radius: 30px; // Add border-radius to create rounded corners
-        overflow: hidden; // Hide content that overflows the container
-        font-size: 22px; // Set font size to 22 pixels
-        font-weight: 700; // Set font weight to 700 (bold)
-
-        div {
-            background: rgb(255, 191, 35); // Set background color to a shade of yellow
-            padding: 5px 5px 5px 10px; // Add padding inside the div
-            border-bottom: 3px solid black; // Add a black bottom border with a thickness of 3 pixels
-        }
-
-        .innertext {
-            background: transparent; // Set background color to transparent
-            border-bottom: 3px solid transparent; // Add a transparent bottom border with a thickness of 3 pixels
-            overflow-wrap: break-word; // Allow long words to break and wrap to the next line
-            font-size: 18px; // Set font size to 18 pixels
-            font-weight: 400; // Set font weight to 400 (normal)
-        }
     }
 }
 
