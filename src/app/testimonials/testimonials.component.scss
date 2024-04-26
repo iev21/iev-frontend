@@ -1,10 +1,17 @@
 /* Testimonials Container */
 .testimonials-container {
-    position: relative; /* Position arrows */
-    display: flex; /* Display testimonials container as flex */
-    align-items: center; /* Align items vertically */
-    overflow: hidden; /* Hide overflowing testimonials */
-    width: 100%; /* Adjust width as needed */
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Center container */
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Positioning context for absolute positioning */
+    border: 1px solid #ccc; /* Add border around the testimonials */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    padding: 10px; /* Add padding */
+}
+
+.testimonials {
+    display: flex; /* Use flexbox layout */
+    animation: scroll 30s linear infinite; /* Animation for scrolling */
 }
 
 /* Arrows */
