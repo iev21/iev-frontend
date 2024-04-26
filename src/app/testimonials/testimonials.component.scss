@@ -7,6 +7,12 @@
     position: relative; /* Positioning context for absolute positioning */
 }
 
+/* CSS for Testimonials Content */
+.testimonials {
+    display: flex; /* Use flexbox layout */
+    animation: scroll 15s linear infinite; /* Animation for scrolling */
+}
+
 /* Keyframes for scrolling animation */
 @keyframes scroll {
     0% {
