@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./events.component.scss']
 })
 export class EventsComponent {
+  // Define the events property with sample data
   events: { name: string, date: string, location: string, rsvp: boolean }[] = [
     { name: 'Small Business Meet Up', date: 'tis 09 march', location: 'Mountain view', rsvp: false },
     { name: 'City Networking Event', date: 'tis 03 april', location: 'Flat iron district', rsvp: false },
