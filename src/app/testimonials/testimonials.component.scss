@@ -1,5 +1,22 @@
 // This SCSS code defines styles for a header and testimonials section.
 
+/* CSS for Testimonials Container */
+.testimonials-container {
+    width: 100%;
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Positioning context for absolute positioning */
+}
+
+/* Keyframes for scrolling animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0); /* Start from initial position */
+    }
+    100% {
+        transform: translateX(-100%); /* Scroll to the left */
+    }
+}
+
 .header {
     text-align: center; // Center-align text
     font-size: 38px; // Set font size to 38 pixels
