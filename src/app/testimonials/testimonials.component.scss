@@ -1,42 +1,52 @@
-/* Testimonials Container */
-.testimonials-container {
-    position: relative; /* Position arrows */
-    overflow: hidden; /* Hide overflowing testimonials */
-    width: 100%; /* Adjust width as needed */
+.header{
+    text-align: center;
+    font-size: 38px;
+    font-weight: 500;
+    padding-bottom: 30px;
 }
-
-/* Testimonials Content */
-.testimonials {
-    display: flex; /* Display testimonials in a flex container */
-    transition: transform 0.3s ease; /* Smooth transition for scrolling */
+.testimonials{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10%;
+    &__div{
+        border: 3px solid black;
+        height: 350px;
+        width: 280px;
+        border-radius: 30px;
+        overflow: hidden;
+        font-size: 22px;
+        font-weight: 700;
+        div{
+            background: rgb(255, 191, 35);
+            padding: 5px 5px 5px 10px;
+            border-bottom: 3px solid black;
+        }
+        .innertext{
+            background: transparent;
+            border-bottom: 3px solid transparent;
+            overflow-wrap: break-word;
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
 }
+@media only screen and (max-width: 600px) {
+    .header{
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .testimonials{
+        flex-direction: column;
+        padding: 10px 5%;
+        align-items: center;
+        &__div{
+            height: 180px;
+            width: 300px;
+            margin-bottom: 10px;
+        }
 
-/* Testimonial */
-.testimonials__div {
-    flex: 0 0 auto; /* Allow testimonials to shrink or grow as needed */
-    padding: 10px; /* Add padding */
-    min-width: 300px; /* Set minimum width */
-    box-sizing: border-box; /* Include padding in width calculation */
-    border: 1px solid #ccc; /* Add border */
-    border-radius: 5px; /* Add border radius */
-    margin-right: 10px; /* Add margin between testimonials */
-}
-
-/* Arrows */
-.arrow {
-    position: absolute; /* Position arrows */
-    top: 50%; /* Align arrows vertically */
-    transform: translateY(-50%); /* Adjust vertical alignment */
-    font-size: 24px; /* Adjust arrow size */
-    cursor: pointer; /* Add pointer cursor */
-    color: #333; /* Set arrow color */
-    z-index: 1; /* Ensure arrows are above testimonials */
-}
-
-.left-arrow {
-    left: 10px; /* Position left arrow */
-}
-
-.right-arrow {
-    right: 10px; /* Position right arrow */
+    }
 }
