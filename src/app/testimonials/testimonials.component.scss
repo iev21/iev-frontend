@@ -1,3 +1,38 @@
+/* Testimonials Container */
+.testimonials-container {
+    position: relative; /* Position arrows */
+    display: flex; /* Display testimonials container as flex */
+    align-items: center; /* Align items vertically */
+    overflow: hidden; /* Hide overflowing testimonials */
+    width: 100%; /* Adjust width as needed */
+}
+
+/* Testimonials Content */
+.testimonials {
+    display: flex; /* Display testimonials in a flex container */
+    transition: transform 0.3s ease; /* Smooth transition for scrolling */
+}
+
+/* Arrows */
+.arrow {
+    position: absolute; /* Position arrows */
+    top: 50%; /* Align arrows vertically */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+    font-size: 24px; /* Adjust arrow size */
+    cursor: pointer; /* Add pointer cursor */
+    color: #333; /* Set arrow color */
+    z-index: 1; /* Ensure arrows are above testimonials */
+}
+
+.left-arrow {
+    left: 0; /* Position left arrow */
+}
+
+.right-arrow {
+    right: 0; /* Position right arrow */
+}
+
+
 .header{
     text-align: center;
     font-size: 38px;
