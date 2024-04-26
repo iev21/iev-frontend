@@ -4,7 +4,7 @@
     display: flex; /* Display testimonials container as flex */
     align-items: center; /* Align items vertically */
     overflow: hidden; /* Hide overflowing testimonials */
-    width: 100%; /* Adjust width as needed */
+    width: 50%; /* Adjust width as needed */
 }
 
 /* Testimonials Content */
@@ -54,11 +54,11 @@
 }
 
 .left-arrow {
-    left: 0; /* Position left arrow */
+    left: 0.25; /* Position left arrow */
 }
 
 .right-arrow {
-    right: 0; /* Position right arrow */
+    right: 0.25; /* Position right arrow */
 }
 
 /* Header Styles */
