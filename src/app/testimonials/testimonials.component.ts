@@ -14,9 +14,7 @@ export class TestimonialsComponent {
   // Define the scrollTestimonials method
   scrollTestimonials(direction: string): void {
     const testimonialsContainer = document.querySelector('.testimonials') as HTMLElement;
-    const testimonials = document.querySelectorAll('.testimonials__div') as NodeListOf
-    
-    NodeListOf<Element>;
+    const testimonials = document.querySelectorAll('.testimonials__div') as NodeListOf<Element>;
     
     const testimonialsWidth = testimonials[0].clientWidth;
     const scrollAmount = direction === 'left' ? -testimonialsWidth : testimonialsWidth;
@@ -24,5 +22,3 @@ export class TestimonialsComponent {
     testimonialsContainer.scrollLeft += scrollAmount;
   }
 }
-
-
