@@ -1,11 +1,11 @@
-// events.component.ts (or relevant component file)
+// testimonials.component.ts (or relevant component file)
 
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-events',
-  templateUrl: './events.component.html',
-  styleUrls: ['./events.component.scss']
+  selector: 'app-testimonials',
+  templateUrl: './testimonials.component.html',
+  styleUrls: ['./testimonials.component.scss']
 })
 export class EventsComponent {
   // Your existing component code goes here
