@@ -1,11 +1,11 @@
 .events{
     padding: 30px 10%;
     &__heading{
-        font-size: 24px;
-        font-weight: 600;
-        text-align: center;
-        padding: 30px 0px;
         font-family: 'Space Grotesk', sans-serif;
+        text-align: center; // Center-align text
+        font-size: 38px; // Set font size to 38 pixels
+        font-weight: 500; // Set font weight to 500 (medium)
+        padding: 30px 0px; // Add bottom padding of 30 pixels
     }
     &__container{
         display: flex;
