@@ -14,7 +14,7 @@
 /* CSS for Testimonials Content */
 .testimonials {
     display: flex; /* Use flexbox layout */
-    animation: scroll 15s linear infinite; /* Animation for scrolling */
+    transition: transform 0.3s ease; /* Smooth transition for scroll effect */
 }
 
 /* CSS for Arrows */
@@ -38,15 +38,6 @@
     right: 0; /* Position right arrow */
 }
 
-/* Keyframes for scrolling animation */
-@keyframes scroll {
-    0% {
-        transform: translateX(0); /* Start from initial position */
-    }
-    100% {
-        transform: translateX(-100%); /* Scroll to the left */
-    }
-}
 
 .header {
     text-align: center; // Center-align text
