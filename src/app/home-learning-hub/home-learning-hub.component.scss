@@ -102,8 +102,12 @@
             color: black;
             margin-top: 10px;
             &:hover {
-              background-color: black;
-              color: rgb(255,191,35);
+                  color: rgb(255, 191, 35);
+                    background: black;
+                    transform: scale(1);
+                    transition: all .4s ease-in;
+                    cursor: pointer;
+                    border: 2px solid rgb(255, 191, 35);
             }
         }
         
