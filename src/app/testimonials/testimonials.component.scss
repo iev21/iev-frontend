@@ -32,56 +32,67 @@
     right: 0; /* Position right arrow */
 }
 
-
+/* Header Styles */
 .header{
-    text-align: center;
-    font-size: 38px;
-    font-weight: 500;
-    padding-bottom: 30px;
+    text-align: center; /* Center-align text */
+    font-size: 38px; /* Set font size */
+    font-weight: 500; /* Set font weight */
+    padding-bottom: 30px; /* Add padding at the bottom */
 }
+
+/* Testimonials Styles */
 .testimonials{
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 10%;
+    display: flex; /* Display testimonials in a flex container */
+    justify-content: space-between; /* Distribute space evenly between testimonials */
+    padding: 30px 10%; /* Add padding */
+    
+    /* Nested styles for testimonials */
     &__div{
-        border: 3px solid black;
-        height: 350px;
-        width: 280px;
-        border-radius: 30px;
-        overflow: hidden;
-        font-size: 22px;
-        font-weight: 700;
+        border: 3px solid black; /* Add border */
+        height: 350px; /* Set height */
+        width: 280px; /* Set width */
+        border-radius: 30px; /* Add border radius */
+        overflow: hidden; /* Hide overflowing content */
+        font-size: 22px; /* Set font size */
+        font-weight: 700; /* Set font weight */
+        
+        /* Nested styles for inner content */
         div{
-            background: rgb(255, 191, 35);
-            padding: 5px 5px 5px 10px;
-            border-bottom: 3px solid black;
+            background: rgb(255, 191, 35); /* Set background color */
+            padding: 5px 5px 5px 10px; /* Add padding */
+            border-bottom: 3px solid black; /* Add border at the bottom */
         }
+        
+        /* Nested styles for inner text */
         .innertext{
-            background: transparent;
-            border-bottom: 3px solid transparent;
-            overflow-wrap: break-word;
-            font-size: 18px;
-            font-weight: 400;
+            background: transparent; /* Set background color */
+            border-bottom: 3px solid transparent; /* Add transparent border at the bottom */
+            overflow-wrap: break-word; /* Break words if needed */
+            font-size: 18px; /* Set font size */
+            font-weight: 400; /* Set font weight */
         }
     }
 }
+
+/* Media Query for Small Screens */
 @media only screen and (max-width: 600px) {
     .header{
-        text-align: center;
-        font-size: 24px;
-        font-weight: 700;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        text-align: center; /* Center-align text */
+        font-size: 24px; /* Set font size */
+        font-weight: 700; /* Set font weight */
+        padding-top: 10px; /* Add padding at the top */
+        padding-bottom: 10px; /* Add padding at the bottom */
     }
     .testimonials{
-        flex-direction: column;
-        padding: 10px 5%;
-        align-items: center;
+        flex-direction: column; /* Stack testimonials vertically */
+        padding: 10px 5%; /* Add padding */
+        align-items: center; /* Center-align items */
+        
+        /* Nested styles for testimonials */
         &__div{
-            height: 180px;
-            width: 300px;
-            margin-bottom: 10px;
+            height: 180px; /* Set height */
+            width: 300px; /* Set width */
+            margin-bottom: 10px; /* Add margin at the bottom */
         }
-
     }
 }
