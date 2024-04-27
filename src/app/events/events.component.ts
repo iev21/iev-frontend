@@ -1,10 +1,20 @@
-import { Component } from '@angular/core';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
-@Component({
-  selector: 'app-events',
-  templateUrl: './events.component.html',
-  styleUrls: ['./events.component.scss']
+import { AppComponent } from './app.component';
+import { EventsComponent } from './events/events.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    EventsComponent
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
-export class EventsComponent {
-
-}
+export class AppModule { }
