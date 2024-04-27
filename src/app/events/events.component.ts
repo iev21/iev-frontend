@@ -1,20 +1,13 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { Component } from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { EventsComponent } from './events/events.component';
-
-@NgModule({
-  declarations: [
-    AppComponent,
-    EventsComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+@Component({
+  selector: 'app-events',
+  templateUrl: './events.component.html',
+  styleUrls: ['./events.component.scss']
 })
-export class AppModule { }
+export class EventsComponent {
+  // Component logic here
+}
+
+// Export the component class
+export { EventsComponent }; // This line exports the class
