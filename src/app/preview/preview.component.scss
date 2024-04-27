@@ -1,242 +1,279 @@
 .video-container {
-    position: relative;
-    overflow: hidden;
-    &__desc{
-        position: relative;
-        padding: 30px 10% 30px 10%;
-        background-image: url('../../assets/journeyhome.png '); /* Path to your background image */
-        background-size: cover; /* Cover the entire container */
+    position: relative; /* Position the container relative to its normal position */
+    overflow: hidden; /* Hide overflowing content */
+
+    &__desc {
+        position: relative; /* Position the description relative to its normal position */
+        padding: 30px 10% 30px 10%; /* Padding for the description */
+
+        background-image: url('../../assets/journeyhome.png '); /* Background image for the description */
+        background-size: cover; /* Cover the entire container with the background image */
         background-position: center; /* Center the background image */
-        &__text{
-            font-size: 18px;
-            font-weight: 400;
-            text-align: start;
-            overflow: hidden;
-            white-space: nowrap;
-            animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
-            margin: 0 auto;
-            display: inline-block;
-            span{
-                font-weight: 700;
+
+        &__text {
+            font-size: 18px; /* Font size for the text */
+            font-weight: 400; /* Font weight for the text */
+            text-align: start; /* Text alignment */
+            overflow: hidden; /* Hide overflowing content */
+            white-space: nowrap; /* Prevent wrapping of text */
+            
+            animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite; /* Animation for typing effect */
+            margin: 0 auto; /* Center the text */
+            display: inline-block; /* Display as inline-block to respect margins */
+            
+            span {
+                font-weight: 700; /* Font weight for spans */
             }
+
             @keyframes typing {
                 from {
-                width: 0;
+                    width: 0; /* Start with no width */
                 }
                 to {
-                width: 100%;
+                    width: 100%; /* End with full width */
                 }
             }
+
             @keyframes blink-caret {
                 from, to {
-                border-color: transparent;
+                    border-color: transparent; /* Hide caret */
                 }
                 50% {
-                // border-color: rgb(255, 191, 35);
+                    // border-color: rgb(255, 191, 35); /* Show blinking caret */
                 }
             }
         }
-        &__obj{
-            display: flex;
-            width: 50%;
-            align-items: flex-end;
-            &__content{
-                padding: 0px 25px;
-                font-size: 16px;
-                font-weight: 500;
-                div{
-                    padding: 10px 0px;
-                    img{
-                        height: 39px;
-                        width: 39px;
+
+        &__obj {
+            display: flex; /* Display as flex */
+            width: 50%; /* Width of the object */
+            align-items: flex-end; /* Align items at the end */
+
+            &__content {
+                padding: 0px 25px; /* Padding for the content */
+                font-size: 16px; /* Font size for the content */
+                font-weight: 500; /* Font weight for the content */
+
+                div {
+                    padding: 10px 0px; /* Padding for divs */
+                    img {
+                        height: 39px; /* Height of images */
+                        width: 39px; /* Width of images */
                     }
                 }
             }
         }
-        &__header{
-            font-size: 40px;
-            font-weight: 400;
-            text-align: start;
-            padding: 15px 0px;
-            span{
-                font-weight: 700;
+
+        &__header {
+            font-size: 50px; /* Font size for the header */
+            font-weight: 400; /* Font weight for the header */
+            text-align: start; /* Text alignment */
+            padding: 15px 0px; /* Padding for the header */
+            
+            span {
+                font-weight: 700; /* Font weight for spans */
             }
         }
-        &__started{
-            padding: 45px 0px 15px 0px;
-            align-items: center;
-            display: flex;
-            div{
-                background: rgb(255, 191, 35);
-                color: black;
-                cursor: pointer;
-                text-align: center;
-                border-radius: 6px;
-                padding: 14px 15px;
-                min-width: 150px;
-                max-width: 200px;
-                font-size: 15px;
-                font-weight: 700;
-                border: 2px solid black;
-                &:hover{
-                    color: rgb(255, 191, 35);
-                    background: black;
-                    transform: scale(1);
-                    transition: all .4s ease-in;
-                    cursor: pointer;
-                    border: 2px solid rgb(255, 191, 35);
+
+        &__started {
+            padding: 45px 0px 15px 0px; /* Padding for the started section */
+            align-items: center; /* Align items in the center */
+            display: flex; /* Display as flex */
+
+            div {
+                background: rgb(255, 191, 35); /* Background color for divs */
+                color: black; /* Text color */
+                cursor: pointer; /* Pointer cursor */
+                text-align: center; /* Text alignment */
+                border-radius: 6px; /* Border radius */
+                padding: 14px 15px; /* Padding for divs */
+                min-width: 150px; /* Minimum width for divs */
+                max-width: 200px; /* Maximum width for divs */
+                font-size: 15px; /* Font size for divs */
+                font-weight: 700; /* Font weight for divs */
+                border: 2px solid black; /* Border for divs */
+
+                &:hover {
+                    color: rgb(255, 191, 35); /* Text color on hover */
+                    background: black; /* Background color on hover */
+                    transform: scale(1); /* Scale transformation */
+                    transition: all .4s ease-in; /* Transition effect */
+                    cursor: pointer; /* Pointer cursor on hover */
+                    border: 2px solid rgb(255, 191, 35); /* Border on hover */
                 }
             }
         }
     }
 
-    &__video{
-        width: 100%;
-        position: relative;
-        height: 446px;
-        &__tag{
-            width: 100%;
-            opacity: 0.3;
-            height: calc(100% - 40px); /* Subtract 20px from top and bottom */
-            object-fit: cover; /* Ensure video fills the container */        
+    &__video {
+        width: 100%; /* Width of the video container */
+        position: relative; /* Position the video container relative to its normal position */
+        height: 446px; /* Height of the video container */
+
+        &__tag {
+            width: 100%; /* Width of the video tag */
+            opacity: 0.3; /* Opacity of the video tag */
+            height: calc(100% - 40px); /* Height of the video tag */
+            object-fit: cover; /* Ensure video fills the container */
         }
-        &__text{
-            position: absolute;
-            top: 40%;
-            display: flex;
-            justify-content: space-between;
-            padding: 0px 10%;
-            &__left{
-                font-size: 38px;
-                width: 37%;
-                font-family: 'Space Grotesk', sans-serif;
+
+        &__text {
+            position: absolute; /* Position the text absolute */
+            top: 40%; /* Position from top */
+            display: flex; /* Display as flex */
+            justify-content: space-between; /* Space between items */
+            padding: 0px 10%; /* Padding for text */
+
+            &__left {
+                font-size: 38px; /* Font size for the left text */
+                width: 37%; /* Width of the left text */
+                font-family: 'Space Grotesk', sans-serif; /* Font family for the left text */
             }
-            &__right{
-                font-size: 16px;
-                width: 45%;
-                line-height: 30px;
+
+            &__right {
+                font-size: 16px; /* Font size for the right text */
+                width: 45%; /* Width of the right text */
+                line-height: 30px; /* Line height for the right text */
             }
         }
     }
-    .events{
-        padding: 30px 10%;
-        &__heading{
-            font-size: 24px;
-            font-weight: 600;
-            text-align: center;
-            padding: 30px 0px;
-            font-family: 'Space Grotesk', sans-serif;
+
+    .events {
+        padding: 30px 10%; /* Padding for the events section */
+
+        &__heading {
+            font-size: 24px; /* Font size for the heading */
+            font-weight: 600; /* Font weight for the heading */
+            text-align: center; /* Text alignment */
+            padding: 30px 0px; /* Padding for the heading */
+            font-family: 'Space Grotesk', sans-serif; /* Font family for the heading */
         }
-        &__container{
-            display: flex;
-            justify-content: space-between;
-            &__flex{
-                height: 400px;
-                width: 300px;
-                border: 2px solid rgb(223, 223, 223);
-                .button{
-                    cursor: pointer;
-                    padding: 10px 25px;
-                    color: white;
-                    width: 70px;
-                    text-align: center;
-                    font-size: 14px;
-                    margin: 0 auto;
-                    background:rgb(159 131 4);
-                }
-                &__heading{
-                    padding: 260px 30px 0px 30px;
-                    font-size: 20px;
-                }
-                &__subheading{
-                    padding: 20px 30px;
-                    font-size: 14px;
+
+        &__container {
+            display: flex; /* Display as flex */
+            justify-content: space-between; /* Space between items */
+
+            &__flex {
+                height: 400px; /* Height of the flex container */
+                width: 300px; /* Width of the flex container */
+                border: 2px solid rgb(223, 223, 223); /* Border for the flex container */
+
+                .button {
+                    cursor: pointer; /* Pointer cursor */
+                    padding: 10px 25px; /* Padding for buttons */
+                    color: white; /* Text color */
+                    width: 70px; /* Width of buttons */
+                    text-align: center; /* Text alignment */
+                    font-size: 14px; /* Font size for buttons */
+                    margin: 0 auto; /* Center the buttons */
+                    background:rgb(159 131 4); /* Background color for buttons */
                 }
 
+                &__heading {
+                    padding: 260px 30px 0px 30px; /* Padding for the heading */
+                    font-size: 20px; /* Font size for the heading */
+                }
+
+                &__subheading {
+                    padding: 20px 30px; /* Padding for the subheading */
+                    font-size: 14px; /* Font size for the subheading */
+                }
             }
-
         }
     }
-
-  }
+}
   
   @media only screen and (max-width: 600px) {
-    .video-container{
-        padding: 0 2%;
-        &__desc{
-            position: relative;
-            padding: 20px 5px 10px 0px;
-            &__text{
-                font-size: 10px;
-                font-weight: 400;
-                animation: typing 2.5s steps(30, end), blink-caret .5s step-end infinite;
+    .video-container {
+        padding: 0 2%; /* Padding for the video container */
+
+        &__desc {
+            position: relative; /* Position the description relative to its normal position */
+            padding: 20px 5px 10px 0px; /* Padding for the description */
+
+            &__text {
+                font-size: 10px; /* Font size for the text */
+                font-weight: 400; /* Font weight for the text */
+                animation: typing 2.5s steps(30, end), blink-caret .5s step-end infinite; /* Animation for typing effect */
+
                 @keyframes blink-caret {
                     from, to {
-                    border-color: transparent;
+                    border-color: transparent; /* Hide caret */
                     }
                     50% {
-                    border-color: rgb(255, 191, 35);
+                    border-color: rgb(255, 191, 35); /* Show blinking caret */
                     }
                 }
             }
-            &__started{
-                padding: 25px 0px 15px 0px;
-                align-items: center;
-                display: flex;
-                div{
-                    background: rgb(255, 191, 35);
-                    color: black;
-                    cursor: pointer;
-                    text-align: center;
-                    border-radius: 4px;
-                    padding: 12px 15px;
-                    min-width: 100px;
-                    max-width: 200px;
-                    font-size: 15px;
-                    font-weight: 700;
-                    border: 1.5px solid black;
+
+            &__started {
+                padding: 25px 0px 15px 0px; /* Padding for the started section */
+                align-items: center; /* Align items in the center */
+                display: flex; /* Display as flex */
+
+                div {
+                    background: rgb(255, 191, 35); /* Background color for divs */
+                    color: black; /* Text color */
+                    cursor: pointer; /* Pointer cursor */
+                    text-align: center; /* Text alignment */
+                    border-radius: 4px; /* Border radius */
+                    padding: 12px 15px; /* Padding for divs */
+                    min-width: 100px; /* Minimum width for divs */
+                    max-width: 200px; /* Maximum width for divs */
+                    font-size: 15px; /* Font size for divs */
+                    font-weight: 700; /* Font weight for divs */
+                    border: 1.5px solid black; /* Border for divs */
                 }
             }
-            &__obj{
-                height: 75px;
-                &__content{
-                    padding: 0px 10px;
-                    font-size: 13px;
-                    font-weight: 500;
-                    div{
-                        padding: 3px 0px;
-                        font-size: 10px;
-                        img{
-                            height: 20px;
-                            width: 20px;
+
+            &__obj {
+                height: 75px; /* Height of the object */
+
+                &__content {
+                    padding: 0px 10px; /* Padding for the content */
+                    font-size: 13px; /* Font size for the content */
+                    font-weight: 500; /* Font weight for the content */
+
+                    div {
+                        padding: 3px 0px; /* Padding for divs */
+                        font-size: 10px; /* Font size for divs */
+
+                        img {
+                            height: 20px; /* Height of images */
+                            width: 20px; /* Width of images */
                         }
                     }
                 }
             }
         }
-        &__video{
-            width: 100%;
-            position: relative;
-            height: 330px;
-            &__tag{
-                width: 100%;
-                opacity: 0.2;
-                height: 330px;
+
+        &__video {
+            width: 100%; /* Width of the video container */
+            position: relative; /* Position the video container relative to its normal position */
+            height: 330px; /* Height of the video container */
+
+            &__tag {
+                width: 100%; /* Width of the video tag */
+                opacity: 0.2; /* Opacity of the video tag */
+                height: 330px; /* Height of the video tag */
             }
-            &__text{
-                position: absolute;
-                top: 10%;
-                display: flex;
-                justify-content: space-between;
-                flex-direction: column;
-                &__left{
-                    font-size: 20px;
-                    width: 100%;
+
+            &__text {
+                position: absolute; /* Position the text absolute */
+                top: 10%; /* Position from top */
+                display: flex; /* Display as flex */
+                justify-content: space-between; /* Space between items */
+                flex-direction: column; /* Flex direction for the column */
+
+                &__left {
+                    font-size: 20px; /* Font size for the left text */
+                    width: 100%; /* Width of the left text */
                 }
-                &__right{
-                    padding-top: 30px;
-                    font-size: 12px;
-                    width: 100%;
+
+                &__right {
+                    padding-top: 30px; /* Padding for the right text */
+                    font-size: 12px; /* Font size for the right text */
+                    width: 100%; /* Width of the right text */
                 }
             }
         }
