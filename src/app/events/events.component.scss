@@ -1,74 +1,20 @@
-/* Add this SCSS code to your existing SCSS file */
-
-/* RSVP Popup Modal */
-.modal {
-  display: none; /* Hide the modal by default */
-  position: fixed; /* Position the modal */
-  z-index: 9999; /* Ensure it appears above other content */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scrolling if needed */
-  background-color: rgba(0,0,0,0.4); /* Black background with opacity */
-  padding-top: 60px; /* Add space at the top */
-}
-
-/* Modal content */
-.modal-content {
-  background-color: #fefefe; /* White background */
-  margin: 5% auto; /* Center modal on screen */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Set width */
-}
-
-/* Close button */
-.close {
-  color: #aaa; /* Light gray text */
-  float: right; /* Float the button to the right */
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* RSVP Button */
-.button {
-  cursor: pointer;
-  padding: 10px 25px;
-  color: white;
-  width: 70px;
-  text-align: center;
-  font-size: 14px;
-  margin: 0 auto;
-  background: rgb(159, 131, 4);
-}
-
-
-/* Events */
-.events {
+.events{
     padding: 30px 10%;
-    &__heading {
-        font-family: 'Space Grotesk', sans-serif;
+    &__heading{
+        font-size: 24px;
+        font-weight: 600;
         text-align: center;
-        font-size: 38px;
-        font-weight: 500;
         padding: 30px 0px;
+        font-family: 'Space Grotesk', sans-serif;
     }
-    &__container {
+    &__container{
         display: flex;
         justify-content: space-between;
-        &__flex {
+        &__flex{
             height: 400px;
             width: 300px;
             border: 2px solid rgb(223, 223, 223);
-            .button {
+            .button{
                 cursor: pointer;
                 padding: 10px 25px;
                 color: white;
@@ -76,21 +22,21 @@
                 text-align: center;
                 font-size: 14px;
                 margin: 0 auto;
-                background: rgb(159 131 4);
+                background:rgb(159 131 4);
             }
-            &__heading {
+            &__heading{
                 padding: 260px 30px 0px 30px;
                 font-size: 20px;
             }
-            &__subheading {
+            &__subheading{
                 padding: 20px 30px;
                 font-size: 14px;
             }
+
         }
+
     }
 }
-
-
 @media only screen and (max-width: 600px) {
     
         .events{
