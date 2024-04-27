@@ -6,8 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./events.component.scss']
 })
 export class EventsComponent {
-  // Component logic here
-}
 
-// Export the component class
-export { EventsComponent }; // This line exports the class
+}

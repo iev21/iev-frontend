@@ -1,21 +1,23 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms'; // Make sure you import FormsModule for ngModel
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AppComponent } from './app.component';
-// Import the EventsComponent correctly
-import { EventsComponent } from './events/events.component';
+import { EventsComponent } from './events.component';
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    EventsComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule // Don't forget to include FormsModule here
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
+describe('EventsComponent', () => {
+  let component: EventsComponent;
+  let fixture: ComponentFixture<EventsComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ EventsComponent ]
+    })
+    .compileComponents();
+
+    fixture = TestBed.createComponent(EventsComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
