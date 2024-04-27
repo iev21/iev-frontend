@@ -1,20 +1,29 @@
 <div class="events">
-    <div class="events__heading">Upcoming Events</div>
-    <div class="events__container">
-        <div class="events__container__flex">
-            <div class="events__container__flex__heading">Small Bussiness Meet Up</div>
-            <div class="events__container__flex__subheading">tis 09 march | Mountain view </div>
-            <div class="button">RSVP</div>
-        </div>
-        <div class="events__container__flex">
-            <div class="events__container__flex__heading">City New Yorking Event</div>
-            <div class="events__container__flex__subheading">tis 03 april | Flat iron district </div>
-            <div class="button">RSVP</div>
-        </div>
-        <div class="events__container__flex">
-            <div class="events__container__flex__heading">Sun Roof Party </div>
-            <div class="events__container__flex__subheading">tis 06 feb | West village </div>
-            <div class="button">RSVP</div>
-        </div>
+  <div class="events__heading">Upcoming Events</div>
+  <div class="events__container">
+    <div class="events__container__flex" *ngFor="let event of events">
+      <div class="events__container__flex__heading">{{ event.title }}</div>
+      <div class="events__container__flex__subheading">{{ event.date | date:'EEE dd MMMM' }} | {{ event.location }}</div>
+      <!-- RSVP button -->
+      <div class="button" (click)="openModal(event)">RSVP</div>
     </div>
+  </div>
+</div>
+
+<!-- RSVP Popup Modal -->
+<div id="myModal" class="modal" [class.show]="showRSVPForm">
+  <div class="modal-content">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <h2>RSVP for {{ selectedEvent?.title }}</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" [(ngModel)]="rsvpName" required><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" [(ngModel)]="rsvpEmail" required><br><br>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" [(ngModel)]="rsvpPhone" required><br><br>
+      <!-- Submit button -->
+      <input type="button" value="Submit" (click)="submitRSVP()">
+    </form>
+  </div>
 </div>
