@@ -27,8 +27,8 @@
 
 .testimonials {
     display: flex; // Use flexbox layout
-    justify-content: space-between; // Align items with equal space between them
-    // transition: transform 0.3s ease; /* Smooth transition for scroll effect */
+    // justify-content: space-between; // Align items with equal space between them
+    transition: transform 0.3s ease; /* Smooth transition for scroll effect */
     // animation: scroll 30s linear infinite; /* Animation for scrolling */
     // animation: scroll 30s ease-in-out infinite; /* Animation for scrolling with ease-in-out timing function */
     padding: 30px 10%; // Add padding of 30 pixels on the top and bottom, 10% of the container width on the left and right
