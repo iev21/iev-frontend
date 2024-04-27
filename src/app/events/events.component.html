@@ -1,60 +1,47 @@
+<!-- Add this HTML code to your existing HTML file -->
+
+<!-- RSVP Popup Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>RSVP</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+            <!-- Add a submit button to trigger the RSVP submission -->
+            <input type="button" value="Submit" onclick="submitRSVP()">
+        </form>
+    </div>
+</div>
+
+<!-- Your existing HTML code for events -->
 <div class="events">
     <div class="events__heading">Upcoming Events</div>
     <div class="events__container">
         <div class="events__container__flex">
             <div class="events__container__flex__heading">Small Business Meet Up</div>
             <div class="events__container__flex__subheading">tis 09 march | Mountain view </div>
+            <!-- Modify the button to trigger the RSVP popup -->
             <div class="button" onclick="openModal()">RSVP</div>
         </div>
-        <!-- Repeat for other events -->
+        <!-- Repeat the structure for other events -->
               <div class="events__container__flex">
             <div class="events__container__flex__heading">Small Business Meet Up</div>
             <div class="events__container__flex__subheading">tis 09 march | Mountain view </div>
+            <!-- Modify the button to trigger the RSVP popup -->
             <div class="button" onclick="openModal()">RSVP</div>
         </div>
+        <!-- Repeat the structure for other events -->
               <div class="events__container__flex">
             <div class="events__container__flex__heading">Small Business Meet Up</div>
             <div class="events__container__flex__subheading">tis 09 march | Mountain view </div>
+            <!-- Modify the button to trigger the RSVP popup -->
             <div class="button" onclick="openModal()">RSVP</div>
         </div>
+        <!-- Repeat the structure for other events -->
     </div>
 </div>
-
-<!-- Modal -->
-<div id="myModal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required>
-            <input type="submit" value="Submit">
-        </form>
-    </div>
-</div>
-
-
-<!-- Place this code in the <head> section or at the end of the <body> section of your HTML file -->
-
-<script>
-    // Open the modal
-    function openModal() {
-        document.getElementById('myModal').style.display = 'block';
-    }
-
-    // Close the modal
-    function closeModal() {
-        document.getElementById('myModal').style.display = 'none';
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        var modal = document.getElementById('myModal');
-        if (event.target == modal) {
-            modal.style.display = 'none';
-        }
-    }
-</script>
