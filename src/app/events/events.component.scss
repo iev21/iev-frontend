@@ -2,9 +2,11 @@
 
 /* RSVP Popup Modal */
 .modal {
-  display: none; /* Hide the modal by default */
+  display: flex; /* Hide the modal by default */
   position: fixed; /* Position the modal */
-  z-index: 1; /* Ensure it appears above other content */
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; /* Ensure it appears above other content */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
