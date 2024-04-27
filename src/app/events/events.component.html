@@ -1,5 +1,4 @@
 <!-- Add this HTML code to your existing HTML file -->
-
 <!-- RSVP Popup Modal -->
 <div id="myModal" class="modal">
     <div class="modal-content">
@@ -25,22 +24,20 @@
         <div class="events__container__flex">
             <div class="events__container__flex__heading">Small Business Meet Up</div>
             <div class="events__container__flex__subheading">tis 09 march | Mountain view </div>
-            <!-- Modify the button to trigger the RSVP popup -->
-            <div class="button" onclick="openModal()">RSVP</div>
+            <!-- Modify the button to have a unique identifier -->
+            <div class="button" id="rsvpButton">RSVP</div>
         </div>
         <!-- Repeat the structure for other events -->
-              <div class="events__container__flex">
-            <div class="events__container__flex__heading">Small Business Meet Up</div>
+                  <div class="events__container__flex__heading">Small Business Meet Up</div>
             <div class="events__container__flex__subheading">tis 09 march | Mountain view </div>
-            <!-- Modify the button to trigger the RSVP popup -->
-            <div class="button" onclick="openModal()">RSVP</div>
+            <!-- Modify the button to have a unique identifier -->
+            <div class="button" id="rsvpButton">RSVP</div>
         </div>
         <!-- Repeat the structure for other events -->
-              <div class="events__container__flex">
             <div class="events__container__flex__heading">Small Business Meet Up</div>
             <div class="events__container__flex__subheading">tis 09 march | Mountain view </div>
-            <!-- Modify the button to trigger the RSVP popup -->
-            <div class="button" onclick="openModal()">RSVP</div>
+            <!-- Modify the button to have a unique identifier -->
+            <div class="button" id="rsvpButton">RSVP</div>
         </div>
         <!-- Repeat the structure for other events -->
     </div>
@@ -50,15 +47,18 @@
 <script>
 // JavaScript for opening and closing the RSVP modal
 function openModal() {
-  document.getElementById("myModal").style.display = 'block';
+  document.getElementById('myModal').style.display = 'block';
 }
 
 function closeModal() {
-  document.getElementById("myModal").style.display = 'none';
+  document.getElementById('myModal').style.display = 'none';
 }
 
 // Function to handle RSVP submission
 function submitRSVP() {
   // Add your logic here for handling the RSVP submission
 }
+
+// Add an event listener to the RSVP button
+document.getElementById('rsvpButton').addEventListener('click', openModal);
 </script>
