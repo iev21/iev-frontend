@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CoursesComponent implements OnInit {
   public basicCourseList: Array<any> = [
     {
-      img: '../../assets/1.jpeg',
+      img: '../../assets/01.png',
       // img: 'https://static.wixstatic.com/media/fc7570_edede96df98b4bc5b8529d1846dac713~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
       title: 'Introduction to Electric Vehicles ',
       description: 'This is placeholder text. To change this content, double-click on the element and click Change Content. ',
