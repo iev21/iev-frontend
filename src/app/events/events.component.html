@@ -4,25 +4,34 @@
         <div class="events__container__flex">
             <div class="events__container__flex__heading">Small Business Meet Up</div>
             <div class="events__container__flex__subheading">tis 09 march | Mountain view </div>
-            <div class="button" onclick="openPopup()">RSVP</div> <!-- Add onclick attribute -->
+            <div class="button" onclick="openModal()">RSVP</div>
         </div>
-        <div class="events__container__flex">
-            <div class="events__container__flex__heading">City New Yorking Event</div>
-            <div class="events__container__flex__subheading">tis 03 april | Flat iron district </div>
-            <div class="button" onclick="openPopup()">RSVP</div> <!-- Add onclick attribute -->
+        <!-- Repeat for other events -->
+              <div class="events__container__flex">
+            <div class="events__container__flex__heading">Small Business Meet Up</div>
+            <div class="events__container__flex__subheading">tis 09 march | Mountain view </div>
+            <div class="button" onclick="openModal()">RSVP</div>
         </div>
-        <div class="events__container__flex">
-            <div class="events__container__flex__heading">Sun Roof Party </div>
-            <div class="events__container__flex__subheading">tis 06 feb | West village </div>
-            <div class="button" onclick="openPopup()">RSVP</div> <!-- Add onclick attribute -->
+              <div class="events__container__flex">
+            <div class="events__container__flex__heading">Small Business Meet Up</div>
+            <div class="events__container__flex__subheading">tis 09 march | Mountain view </div>
+            <div class="button" onclick="openModal()">RSVP</div>
         </div>
     </div>
 </div>
 
-<script>
-    function openPopup() {
-        // Open a pop-up window for RSVP submission
-        // Replace the URL with the appropriate URL of your RSVP submission page
-        window.open('https://docs.google.com/forms/d/1Oqdc-wogIgQd2ewqvVK3kSdOFDQw8RKM3GIh0fBme20/edit', '_blank', 'width=600,height=400');
-    }
-</script>
+<!-- Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
