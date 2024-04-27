@@ -7,6 +7,18 @@
       <!-- RSVP button -->
       <div class="button" (click)="openModal(event)">RSVP</div>
     </div>
+    <div class="events__container__flex" *ngFor="let event of events">
+      <div class="events__container__flex__heading">{{ event.title }}</div>
+      <div class="events__container__flex__subheading">{{ event.date | date:'EEE dd MMMM' }} | {{ event.location }}</div>
+      <!-- RSVP button -->
+      <div class="button" (click)="openModal(event)">RSVP</div>
+    </div>
+    <div class="events__container__flex" *ngFor="let event of events">
+      <div class="events__container__flex__heading">{{ event.title }}</div>
+      <div class="events__container__flex__subheading">{{ event.date | date:'EEE dd MMMM' }} | {{ event.location }}</div>
+      <!-- RSVP button -->
+      <div class="button" (click)="openModal(event)">RSVP</div>
+    </div>
   </div>
 </div>
 
