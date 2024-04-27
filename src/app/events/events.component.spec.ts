@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class EventsComponent {
   events = [
     { title: 'Small Business Meet Up', date: new Date('2024-03-09'), location: 'Mountain View' },
+    { title: 'Small Business Meet Up', date: new Date('2024-03-09'), location: 'Mountain View' },
+    { title: 'Small Business Meet Up', date: new Date('2024-03-09'), location: 'Mountain View' },
     // Add more events as needed
   ];
   showRSVPForm = false;
