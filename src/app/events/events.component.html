@@ -1,36 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Events RSVP</title>
-  <link rel="stylesheet" href="">src/app/events/events.component.scss<!-- Replace "https://your-domain.com/styles.css" with the actual URL of your CSS file -->
-</head>
-<body>
-
-<!-- Your existing HTML code for events -->
 <div class="events">
   <div class="events__heading">Upcoming Events</div>
   <div class="events__container">
-    <div class="events__container__flex">
-      <div class="events__container__flex__heading">Small Business Meet Up</div>
-      <div class="events__container__flex__subheading">tis 09 march | Mountain view </div>
+    <div class="events__container__flex" *ngFor="let event of events">
+      <div class="events__container__flex__heading">{{ event.title }}</div>
+      <div class="events__container__flex__subheading">{{ event.date | date:'EEE dd MMMM' }} | {{ event.location }}</div>
       <!-- RSVP button -->
-      <div class="button" id="rsvpButton">RSVP</div>
-    </div>
-    <!-- Add more event containers here if needed -->
-    <div class="events__container__flex">
-      <div class="events__container__flex__heading">Small Business Meet Up</div>
-      <div class="events__container__flex__subheading">tis 09 march | Mountain view </div>
-      <!-- RSVP button -->
-      <div class="button" id="rsvpButton">RSVP</div>
-    </div>
-    <!-- Add more event containers here if needed -->
-    <div class="events__container__flex">
-      <div class="events__container__flex__heading">Small Business Meet Up</div>
-      <div class="events__container__flex__subheading">tis 09 march | Mountain view </div>
-      <!-- RSVP button -->
-      <div class="button" id="rsvpButton">RSVP</div>
+      <div class="button" (click)="openModal(event)">RSVP</div>
     </div>
   </div>
 </div>
@@ -38,38 +13,17 @@
 <!-- RSVP Popup Modal -->
 <div id="myModal" class="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <h2>RSVP</h2>
+    <span class="close" (click)="closeModal()">&times;</span>
+    <h2>RSVP for {{ selectedEvent?.title }}</h2>
     <form>
       <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required><br><br>
+      <input type="text" id="name" name="name" [(ngModel)]="rsvpName" required><br><br>
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required><br><br>
+      <input type="email" id="email" name="email" [(ngModel)]="rsvpEmail" required><br><br>
       <label for="phone">Phone:</label>
-      <input type="tel" id="phone" name="phone" required><br><br>
+      <input type="tel" id="phone" name="phone" [(ngModel)]="rsvpPhone" required><br><br>
       <!-- Submit button -->
-      <input type="button" value="Submit" onclick="submitRSVP()">
+      <input type="button" value="Submit" (click)="submitRSVP()">
     </form>
   </div>
 </div>
-
-<script>
-// JavaScript for opening and closing the RSVP modal
-function openModal() {
-  document.getElementById('myModal').style.display = 'block';
-}
-
-function closeModal() {
-  document.getElementById('myModal').style.display = 'none';
-}
-
-function submitRSVP() {
-  // Add your logic here for handling the RSVP submission
-}
-
-// Add event listener to the RSVP button
-document.getElementById('rsvpButton').addEventListener('click', openModal);
-</script>
-
-</body>
-</html>
