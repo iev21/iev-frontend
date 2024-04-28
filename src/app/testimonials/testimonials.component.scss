@@ -54,6 +54,7 @@
         border-radius: 50%; /* Make it circular */
         overflow: hidden; /* Hide overflowing parts */
         margin-right: 20px; /* Adjust spacing between image and text */
+        padding: 30px 10%; // Add padding of 30 pixels on the top and bottom, 10% of the container width on the left and right
         }
 
         .testimonial-image img {
