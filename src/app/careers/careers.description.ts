@@ -6,7 +6,10 @@ As a Software Engineer at our company, you will be responsible for designing, de
 You will work closely with our cross-functional teams to understand project requirements and translate them into scalable and efficient code. 
 Your role will involve participating in the entire software development lifecycle, from concept and design to testing and deployment.
 
+
+
 Key Responsibilities:
+
 - Collaborate with product managers and designers to understand project requirements and translate them into technical specifications.
 - Design and develop robust, scalable, and maintainable software solutions using industry best practices.
 - Write clean, efficient, and well-documented code.
@@ -14,6 +17,8 @@ Key Responsibilities:
 - Troubleshoot and debug software issues, and provide timely resolutions.
 - Participate in the planning and estimation of project timelines and deliverables.
 - Stay updated on emerging technologies and best practices in software development.
+
+
 
 Requirements:
 - Bachelor's degree in Computer Science, Engineering, or a related field.
