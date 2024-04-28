@@ -45,8 +45,13 @@ export class CareersComponent {
     // Close modal after submission
     this.closeModal();
   }
-onFileSelected(event: any): void {
+
+  onFileSelected(event: any): void {
     // Handle file selection
     this.selectedResume = event.target.files[0];
+  }
+
+  toggleDescription(job: any): void {
+    job.showFullDescription = !job.showFullDescription;
   }
 }
