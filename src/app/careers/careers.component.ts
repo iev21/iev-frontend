@@ -5,9 +5,13 @@ import { Component } from '@angular/core';
   templateUrl: './careers.component.html',
   styleUrls: ['./careers.component.scss']
 })
+  
+import { softwareEngineerDescription } from './descriptions';
+console.log(softwareEngineerDescription);
+
 export class CareersComponent {
   jobOpenings: any[] = [
-    { title: 'Software Engineer', description: 'We are seeking a talented software engineer...' },
+    { title: 'Software Engineer', description: softwareEngineerDescription},
     { title: 'UI/UX Designer', description: 'We are looking for a creative UI/UX designer...' },
     { title: 'Marketing Specialist', description: 'Join our marketing team to help promote our products...' }
   ];
