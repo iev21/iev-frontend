@@ -2,7 +2,7 @@
 
 /* Container styles */
 .container {
-  max-width: 1000px; /* Set maximum width for container */
+  max-width: 800px; /* Set maximum width for container */
   margin: 0 auto; /* Center container horizontally */
   padding: 100px 10% 40px 10%; /* Add padding */
 }
@@ -61,8 +61,8 @@ button:hover {
   z-index: 9999; /* Set z-index */
   left: 0; /* Align to left */
   top: 0; /* Align to top */
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  width: 150%; /* Full width */
+  height: 150%; /* Full height */
   background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black background */
 }
 
