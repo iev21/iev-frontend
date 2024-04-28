@@ -1,86 +1,98 @@
 /* careers.component.scss */
 
+/* Container styles */
 .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 100px 10% 40px 10%;
+  max-width: 1000px; /* Set maximum width for container */
+  margin: 0 auto; /* Center container horizontally */
+  padding: 100px 10% 40px 10%; /* Add padding */
 }
 
+/* Heading styles */
 h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 24px; /* Set font size */
+  margin-bottom: 20px; /* Add margin at bottom */
 }
 
+/* Paragraph styles */
 p {
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Add margin at bottom */
 }
 
+/* Unordered list styles */
 ul {
-  list-style-type: none;
-  padding: 0;
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
 }
 
+/* List item styles */
 li {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 20px;
-  margin-bottom: 20px;
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add border radius */
+  padding: 20px; /* Add padding */
+  margin-bottom: 20px; /* Add margin at bottom */
 }
 
+/* Button styles */
 button {
-  background-color: rgb(255, 191, 35);
-  color: black;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
+  background-color: rgb(255, 191, 35); /* Set background color */
+  color: black; /* Set text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Add padding */
+  border-radius: 5px; /* Add border radius */
+  cursor: pointer; /* Set cursor to pointer */
 }
 
+/* Button hover styles */
 button:hover {
-  
-                      color: rgb(255, 191, 35);
-                    background: black;
-                    transform: scale(1);
-                    transition: all .4s ease-in;
-                    cursor: pointer;
-                    border: 2px solid rgb(255, 191, 35);
+  color: rgb(255, 191, 35); /* Change text color on hover */
+  background: black; /* Change background color on hover */
+  transform: scale(1); /* Scale button slightly on hover */
+  transition: all .4s ease-in; /* Add transition effect */
+  cursor: pointer; /* Set cursor to pointer */
+  border: 2px solid rgb(255, 191, 35); /* Add border on hover */
 }
 
+/* Modal styles */
 .modal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  z-index: 9999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  position: fixed; /* Position fixed */
+  z-index: 9999; /* Set z-index */
+  left: 0; /* Align to left */
+  top: 0; /* Align to top */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black background */
 }
 
+/* Modal content styles */
 .modal-content {
-  background-color: #fefefe;
-  padding: 20px;
-  border-radius: 5px;
-  display:flex;
-  flex-direction: column;
+  background-color: #fefefe; /* Set background color */
+  padding: 20px; /* Add padding */
+  border-radius: 5px; /* Add border radius */
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Arrange items in a column */
 }
+
+/* Form group styles */
 .form-group {
   margin-bottom: 20px; /* Add margin between form groups */
 }
 
+/* Close button styles */
 .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
+  color: #aaa; /* Set text color */
+  float: right; /* Float the button to the right */
+  font-size: 28px; /* Set font size */
+  font-weight: bold; /* Set font weight */
+  cursor: pointer; /* Set cursor to pointer */
 }
 
+/* Close button hover/focus styles */
 .close:hover,
 .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+  color: black; /* Change text color on hover/focus */
+  text-decoration: none; /* Remove underline */
+  cursor: pointer; /* Set cursor to pointer */
 }
