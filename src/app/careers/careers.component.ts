@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./careers.component.scss']
 })
   
-import{softwareEngineerDescription } from './careers/careers.description';
+import{softwareEngineerDescription } from './careers.description';
 
 export class CareersComponent {
   jobOpenings: any[] = [
