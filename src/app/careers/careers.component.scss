@@ -61,8 +61,10 @@ button:hover {
   z-index: 9999; /* Set z-index */
   left: 0; /* Align to left */
   top: 0; /* Align to top */
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  width: 80%; /* Set the width to 80% of the viewport width */
+  height: 80%; /* Set the height to 80% of the viewport height */
+  max-width: 800px; /* Optional: Set a maximum width */
+  max-height: 600px; /* Optional: Set a maximum height */
   background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black background */
 }
 
