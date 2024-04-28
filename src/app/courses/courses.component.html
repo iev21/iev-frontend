@@ -1,17 +1,17 @@
 <div class="courses" id="courses">
-    <header>Basic</header>
+    <header>Basic Level Courses</header>
     <div class="courses__body">
         <ng-container *ngFor="let course of basicCourseList">
             <app-courses-card [courseData]="course"></app-courses-card>
         </ng-container>
     </div>
-    <header>Intermediate</header>
+    <header>Intermediate Level Courses</header>
     <div class="courses__body">
         <ng-container *ngFor="let course of intermediateCourseList">
             <app-courses-card [courseData]="course"></app-courses-card>
         </ng-container>
     </div>
-    <header>Advanced</header>
+    <header>Advanced Level Courses</header>
     <div class="courses__body">
         <ng-container *ngFor="let course of advancedCourseList">
             <app-courses-card [courseData]="course"></app-courses-card>
