@@ -1,5 +1,4 @@
-export class CareersComponent {
-  softwareEngineerDescription: string = `
+export const softwareEngineerDescription: string = `
     As a Software Engineer at our company, you will be responsible for designing, developing, and maintaining high-quality software solutions. You will work closely with our cross-functional teams to understand project requirements and translate them into scalable and efficient code. Your role will involve participating in the entire software development lifecycle, from concept and design to testing and deployment.
     
     Key Responsibilities:
@@ -25,4 +24,3 @@ export class CareersComponent {
     
     Join our team and be part of a dynamic and innovative environment where you can contribute to meaningful projects and grow your career as a Software Engineer!
   `;
-}
