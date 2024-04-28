@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import{softwareEngineerDescription } from './careers.description';
 
 @Component({
   selector: 'app-careers',
@@ -6,8 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./careers.component.scss']
 })
   
-import{softwareEngineerDescription } from './careers.description';
-
 export class CareersComponent {
   jobOpenings: any[] = [
     { title: 'Software Engineer', description: softwareEngineerDescription},
