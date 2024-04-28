@@ -1,17 +1,25 @@
 import { Component } from '@angular/core';
-import{softwareEngineerDescription } from './careers.description';
+import { softwareEngineerDescription } from './careers.description';
 
 @Component({
   selector: 'app-careers',
   templateUrl: './careers.component.html',
   styleUrls: ['./careers.component.scss']
 })
-  
 export class CareersComponent {
   jobOpenings: any[] = [
-    { title: 'Software Engineer', description: softwareEngineerDescription},
-    { title: 'UI/UX Designer', description: 'We are looking for a creative UI/UX designer...' },
-    { title: 'Marketing Specialist', description: 'Join our marketing team to help promote our products...' }
+    { 
+      title: 'Software Engineer', 
+      description: softwareEngineerDescription 
+    },
+    { 
+      title: 'UI/UX Designer', 
+      description: 'We are looking for a creative UI/UX designer...' 
+    },
+    { 
+      title: 'Marketing Specialist', 
+      description: 'Join our marketing team to help promote our products...' 
+    }
   ];
 
   showApplicationModal: boolean = false;
