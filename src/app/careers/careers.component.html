@@ -5,16 +5,17 @@
     <p>We're always looking for talented individuals to join our team. Explore our current job openings below:</p>
     <ul>
         <li *ngFor="let job of jobOpenings">
-          <h3>{{ job.title }}</h3>
-          <p>{{ job.description | slice:0:10  }}</p>
-          {{job.description.length > 10 ? '...' : '' }}
-          <span *ngIf="job.description.length > 10">
-          <button (click)="toggleDescription(job)">Read More</button>
-          </span>
-          <button (click)="openApplicationModal(job)">Apply Now</button>
+            <h3>{{ job.title }}</h3>
+            <p *ngIf="!job.showFullDescription">{{ job.description | slice:0:100 }}{{ job.description.length > 100 ? '...' : '' }}</p>
+            <p *ngIf="job.showFullDescription">{{ job.description }}</p>
+            <span *ngIf="job.description.length > 100">
+                <button (click)="toggleDescription(job)">Read More</button>
+            </span>
+            <button (click)="openApplicationModal(job)">Apply Now</button>
         </li>
-  </ul>
+    </ul>
 </div>
+
 
 <!-- Modal for application form -->
 <div *ngIf="showApplicationModal" class="modal">
