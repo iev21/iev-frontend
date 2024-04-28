@@ -48,6 +48,19 @@
             padding: 5px 5px 5px 10px; // Add padding inside the div
             border-bottom: 3px solid black; // Add a black bottom border with a thickness of 3 pixels
         }
+        .testimonial-image {
+        width: 100px; /* Adjust width as needed */
+        height: 100px; /* Adjust height as needed */
+        border-radius: 50%; /* Make it circular */
+        overflow: hidden; /* Hide overflowing parts */
+        margin-right: 20px; /* Adjust spacing between image and text */
+        }
+
+        .testimonial-image img {
+        width: 100%; /* Make the image fill the circular box */
+        height: 100%; /* Make the image fill the circular box */
+        object-fit: cover; /* Maintain aspect ratio */
+        }
 
         .innertext {
             background: transparent; // Set background color to transparent
