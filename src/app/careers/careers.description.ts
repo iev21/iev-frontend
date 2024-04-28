@@ -1,16 +1,18 @@
 export const softwareEngineerDescription: string = `
-    As a Software Engineer at our company, you will be responsible for designing, developing, and maintaining high-quality software solutions. You will work closely with our cross-functional teams to understand project requirements and translate them into scalable and efficient code. Your role will involve participating in the entire software development lifecycle, from concept and design to testing and deployment.
+    <p As a Software Engineer at our company, you will be responsible for designing, developing, and maintaining high-quality software solutions. 
+    You will work closely with our cross-functional teams to understand project requirements and translate them into scalable and efficient code. 
+    Your role will involve participating in the entire software development lifecycle, from concept and design to testing and deployment.</p>
     
-    Key Responsibilities:
+    <p>Key Responsibilities:
     - Collaborate with product managers and designers to understand project requirements and translate them into technical specifications.
     - Design and develop robust, scalable, and maintainable software solutions using industry best practices.
     - Write clean, efficient, and well-documented code.
     - Perform code reviews to ensure code quality and maintain consistency across the codebase.
     - Troubleshoot and debug software issues, and provide timely resolutions.
     - Participate in the planning and estimation of project timelines and deliverables.
-    - Stay updated on emerging technologies and best practices in software development.
+    - Stay updated on emerging technologies and best practices in software development.</p>
     
-    Requirements:
+    <p>Requirements:
     - Bachelor's degree in Computer Science, Engineering, or a related field.
     - Proven experience as a Software Engineer or similar role, with a strong portfolio of projects.
     - Proficiency in one or more programming languages such as Java, JavaScript, Python, or C++.
@@ -20,7 +22,8 @@ export const softwareEngineerDescription: string = `
     - Excellent problem-solving and analytical skills.
     - Effective communication and collaboration abilities.
     - Ability to work both independently and in a team environment.
-    - Experience with Agile development methodologies is a plus.
+    - Experience with Agile development methodologies is a plus.</p>
     
-    Join our team and be part of a dynamic and innovative environment where you can contribute to meaningful projects and grow your career as a Software Engineer!
+    <p>Join our team and be part of a dynamic and innovative environment 
+    where you can contribute to meaningful projects and grow your career as a Software Engineer!</p>
   `;
