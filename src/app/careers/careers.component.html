@@ -6,7 +6,7 @@
     <ul>
         <li *ngFor="let job of jobOpenings">
             <h3>{{ job.title }}</h3>
-            <p>{{ job.description }}</p>
+            <p>{{ job.description | slice:0:10  }}</p>
             <button (click)="openApplicationModal(job)">Apply Now</button>
         </li>
     </ul>
