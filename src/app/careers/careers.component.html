@@ -8,7 +8,7 @@
             <h3>{{ job.title }}</h3>
             <p>{{ job.description | slice:0:10  }}</p>
           {{ job.description.length > 10 ? '...' : '' }}
-          <span *ngIf="job.description.length > 100">
+          <span *ngIf="job.description.length > 10">
           <button (click)="toggleDescription(job)">Read More</button>
           </span>
           <button (click)="openApplicationModal(job)">Apply Now</button>
