@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { softwareEngineerDescription } from './careers.description';
+// import { softwareEngineerDescription } from './careers.description';
 
 
 @Component({
@@ -11,7 +11,7 @@ export class CareersComponent {
   jobOpenings: any[] = [
     { 
       title: 'Software Engineer', 
-      description: softwareEngineerDescription 
+      description: 'softwareEngineerDescription'
     },
     { 
       title: 'UI/UX Designer', 
