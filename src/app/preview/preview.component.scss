@@ -86,13 +86,12 @@
                 cursor: pointer; /* Pointer cursor */
                 text-align: center; /* Text alignment */
                 border-radius: 6px; /* Border radius */
-                padding: 14px 15px; /* Padding for divs */
-                min-width: 150px; /* Minimum width for divs */
-                max-width: 200px; /* Maximum width for divs */
+                padding: 12px 13px; /* Padding for divs */
+                min-width: 100px; /* Minimum width for divs */
+                max-width: 150px; /* Maximum width for divs */
                 font-size: 15px; /* Font size for divs */
                 font-weight: 700; /* Font weight for divs */
                 border: 2px solid black; /* Border for divs */
-
                 &:hover {
                     color: rgb(255, 191, 35); /* Text color on hover */
                     background: black; /* Background color on hover */
