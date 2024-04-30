@@ -1,21 +1,11 @@
-<div class="events">
-    <div class="events__heading">Upcoming Events</div>
-    <div class="events__container">
-        <div class="events__container__flex">
-            <div class="events__container__flex__heading">Small Bussiness Meet Up</div>
-            <div class="events__container__flex__subheading">tis 09 march | Mountain view </div>
-            <!-- <div class="button">RSVP</div> -->
-          <button (click)="registerForEvent(event)">Register</button>
-        </div>
-        <div class="events__container__flex">
-            <div class="events__container__flex__heading">City New Yorking Event</div>
-            <div class="events__container__flex__subheading">tis 03 april | Flat iron district </div>
-            <div class="button">RSVP</div>
-        </div>
-        <div class="events__container__flex">
-            <div class="events__container__flex__heading">Sun Roof Party </div>
-            <div class="events__container__flex__subheading">tis 06 feb | West village </div>
-            <div class="button">RSVP</div>
-        </div>
-    </div>
+<div class="container">
+  <h2>Upcoming Events</h2>
+  <div *ngFor="let event of events">
+    <h3>{{ event.title }}</h3>
+    <p>Date: {{ event.date | date }}</p>
+    <p>Location: {{ event.location }}</p>
+    <p>Description: {{ event.description }}</p>
+    <button (click)="registerForEvent(event)">Register</button>
+    <hr>
+  </div>
 </div>
