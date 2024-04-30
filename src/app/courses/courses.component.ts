@@ -25,14 +25,14 @@ export class CoursesComponent implements OnInit {
     {
       img: 'https://static.wixstatic.com/media/fc7570_2ed737b9f562470691056c62ffb8e47a~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
       title: 'Introduction to Motor Technolgies',
-      description: 'This is placeholder text. To change this content, double-click on the element and click Change Content.',
+      description: 'Dive into the essentials of Motor Technologies with our introductory course. Discover motor design, operation, and real-world applications. Enroll today!',
       // price: '$100',
       duration: '1 day'
     },
     {
       img: 'https://static.wixstatic.com/media/fc7570_2ed737b9f562470691056c62ffb8e47a~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
       title: 'Introduction to Charging Technolgies',
-      description: 'This is placeholder text. To change this content, double-click on the element and click Change Content.',
+      description: 'Unlock the fundamentals of Charging Technologies. Learn about charging infrastructure, standards, and emerging trends. Join our course for comprehensive insights!',
       // price: '$100',
       duration: '1 day'
     },
