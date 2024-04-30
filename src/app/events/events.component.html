@@ -1,11 +1,5 @@
-<div class="container">
-  <h2>Upcoming Events</h2>
-  <div *ngFor="let event of events">
-    <h3>{{ event.title }}</h3>
-    <p>Date: {{ event.date | date }}</p>
-    <p>Location: {{ event.location }}</p>
-    <p>Description: {{ event.description }}</p>
-    <button (click)="registerForEvent(event)">Register</button>
-    <hr>
+<div class="event-container">
+  <div *ngFor="let event of events" class="event-item">
+    {{ event.title }}
   </div>
 </div>
