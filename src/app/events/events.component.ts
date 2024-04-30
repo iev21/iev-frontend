@@ -1,29 +1,24 @@
 import { Component } from '@angular/core';
+import { trigger, transition, animate, style } from '@angular/animations';
 
 @Component({
   selector: 'app-events',
   templateUrl: './events.component.html',
-  styleUrls: ['./events.component.scss']
+  styleUrls: ['./events.component.scss'],
+  animations: [
+    trigger('rollIn', [
+      transition(':enter', [
+        style({ transform: 'translateX(-100%)', opacity: 0 }),
+        animate('500ms ease-out', style({ transform: 'translateX(0)', opacity: 1 })),
+      ])
+    ])
+  ]
 })
 export class EventsComponent {
-  events: any[] = [
-    { 
-      title: 'Event 1', 
-      date: new Date(2024, 3, 30),
-      location: 'Location 1',
-      description: 'Description of Event 1'
-    },
-    { 
-      title: 'Event 2', 
-      date: new Date(2024, 4, 15),
-      location: 'Location 2',
-      description: 'Description of Event 2'
-    },
+  events = [
+    { title: 'Event 1' },
+    { title: 'Event 2' },
+    { title: 'Event 3' },
     // Add more events as needed
   ];
-
-  registerForEvent(event: any): void {
-    // Add your registration logic here
-    console.log('Registered for event:', event);
-  }
 }
