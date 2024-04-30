@@ -14,6 +14,7 @@ export class EventsComponent {
 
   showRegistrationModal: boolean = false;
   selectedEvent: any;
+  registrationData: any = {};
 
   openRegistrationModal(event: any): void {
     this.selectedEvent = event;
@@ -22,6 +23,18 @@ export class EventsComponent {
 
   closeRegistrationModal(): void {
     this.showRegistrationModal = false;
-    // Reset any form fields if needed
+    this.clearRegistrationData();
+  }
+
+  registerForEvent(): void {
+    // Implement your logic to handle event registration here
+    console.log('Registration Data:', this.registrationData);
+    // Close the modal after submitting registration
+    this.closeRegistrationModal();
+  }
+
+  clearRegistrationData(): void {
+    // Reset the registration form data
+    this.registrationData = {};
   }
 }
