@@ -57,6 +57,13 @@ export class CoursesComponent implements OnInit {
       // price: '$100',
       duration: '1 day'
     },
+    {
+      img: 'https://static.wixstatic.com/media/fc7570_2ed737b9f562470691056c62ffb8e47a~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
+      title: 'Battery Electric Vehicle Performance Analysis',
+      description: 'Unlock insights into BEV Performance Analysis with our introductory course. Learn essential techniques for optimizing battery electric vehicle performance. Join IEV Technologies now!',
+      // price: '$100',
+      duration: '1 day'
+    },
   ];
   public intermediateCourseList: Array<any> = [
     {
@@ -77,8 +84,15 @@ export class CoursesComponent implements OnInit {
  public advancedCourseList: Array<any> = [
     {
       img: 'https://static.wixstatic.com/media/fc7570_edede96df98b4bc5b8529d1846dac713~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
-      title: 'Introduction to Electric Vehicles ',
-      description: 'This is placeholder text. To change this content, double-click on the element and click Change Content.',
+      title: 'Advance Course on BEV Powertrain Modeling & Simulations',
+      description: 'Explore cutting-edge BEV Powertrain Modeling & Simulations with our Advanced Course, empowering engineers to innovate in electric vehicle technology. Join IEV Technologies for unparalleled expertise!',
+      // price: '$100',
+      duration: '4 weeks'
+    },
+    {
+      img: 'https://static.wixstatic.com/media/fc7570_edede96df98b4bc5b8529d1846dac713~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
+      title: 'Advanced Course on Li-ion battery modeling',
+      description: 'Unlock the complexities of Li-ion Battery Modeling with our Advanced Course, delving into sophisticated techniques for cutting-edge electric vehicle engineering. Enroll at IEV Technologies now!',
       // price: '$100',
       duration: '4 weeks'
     },
