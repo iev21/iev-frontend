@@ -6,7 +6,7 @@
         </div> 
         <div class="header__submenu">
             <div [ngClass]="{'active': homeActive}" (click)="navigateHome()">Home</div>
-            <div [ngClass]="{'active': isAboutUs}" (click)="navigateAboutus()">About us</div>
+            <div [ngClass]="{'active': isAboutUs}" (click)="navigateAboutus()">About Us</div>
             <!-- <div [ngClass]="{'active': isCourses}" (click)="navigateCourses()">Courses</div> -->
             <!-- <div [ngClass]="{'active': isServices}" (click)="navigateServices()">Services</div> -->
             <div [ngClass]="{'active': isCourses}" (click)="navigateCourses()">iEV Learning Hub</div>
@@ -26,7 +26,7 @@
         </div>
         <div  *ngIf="mobileSubmenu" class="header__msubmenu" [ngClass]="{'open': mobileSubmenu}">
             <div [ngClass]="{'active': homeActive}" (click)="navigateHome()">Home</div>
-            <div [ngClass]="{'active': isAboutUs}" (click)="navigateAboutus()">About us</div>
+            <div [ngClass]="{'active': isAboutUs}" (click)="navigateAboutus()">About Us</div>
             <!-- <div [ngClass]="{'active': isCourses}" (click)="navigateCourses()">Courses</div> -->
             <div [ngClass]="{'active': isCourses}" (click)="navigateCourses()">IEv Learning Hub</div>
             <div [ngClass]="{'active': isContactus}" (click)="openContactForm()">Contact Us</div>
