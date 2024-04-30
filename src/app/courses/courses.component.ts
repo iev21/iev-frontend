@@ -79,7 +79,7 @@ export class CoursesComponent implements OnInit {
       img: 'https://static.wixstatic.com/media/fc7570_edede96df98b4bc5b8529d1846dac713~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
       title: 'Introduction to Electric Vehicles ',
       description: 'This is placeholder text. To change this content, double-click on the element and click Change Content.',
-      price: '$100',
+      // price: '$100',
       duration: '4 weeks'
     },
   ];
