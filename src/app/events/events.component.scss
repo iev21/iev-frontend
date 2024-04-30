@@ -1,31 +1,25 @@
-.container {
-  max-width: 800px;
-  margin: 0 auto;
+.event-container {
+  display: flex;
+  flex-direction: column;
 }
 
-h2 {
-  font-size: 24px;
+.event-item {
   margin-bottom: 20px;
 }
 
-h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
+/* Define the animation */
+.event-item {
+  animation: rollIn 0.5s ease-in-out;
 }
 
-p {
-  margin-bottom: 10px;
-}
-
-button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-button:hover {
-  background-color: #0056b3;
+/* Define the keyframes for the animation */
+@keyframes rollIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
