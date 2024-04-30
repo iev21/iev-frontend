@@ -46,14 +46,14 @@ export class CoursesComponent implements OnInit {
     {
       img: 'https://static.wixstatic.com/media/fc7570_2ed737b9f562470691056c62ffb8e47a~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
       title: 'Introduction to EV Battery Modeling',
-      description: 'This is placeholder text. To change this content, double-click on the element and click Change Content.',
+      description: 'Gain expertise in EV Battery Modeling with our comprehensive course. Learn simulation techniques, battery behavior, and optimization strategies. Enroll for professional advancement today!',
       // price: '$100',
       duration: '1 day'
     },
     {
       img: 'https://static.wixstatic.com/media/fc7570_2ed737b9f562470691056c62ffb8e47a~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
       title: 'Introduction to Battery Management Systems',
-      description: 'This is placeholder text. To change this content, double-click on the element and click Change Content.',
+      description: 'Dive into Battery Management Systems with our comprehensive course. Explore BMS architecture, algorithms, and integration. Enroll now for expert insights!',
       // price: '$100',
       duration: '1 day'
     },
