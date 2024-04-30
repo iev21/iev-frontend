@@ -38,14 +38,14 @@ export class CoursesComponent implements OnInit {
     },
     {
       img: 'https://static.wixstatic.com/media/fc7570_2ed737b9f562470691056c62ffb8e47a~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
-      title: 'Introduction to BEV Powertrain Simulations',
+      title: 'Introduction to Battery Electric Vehicle Powertrain Simulations',
       description: 'Delve into BEV Powertrain Simulations with our expert-led course. Learn modeling, analysis, and optimization techniques for EV powertrains. Enroll for comprehensive insights!',
       // price: '$100',
       duration: '1 day'
     },
     {
       img: 'https://static.wixstatic.com/media/fc7570_2ed737b9f562470691056c62ffb8e47a~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
-      title: 'Introduction to EV Battery Modeling',
+      title: 'Introduction to Electric Vehicle Battery Modeling',
       description: 'Gain expertise in EV Battery Modeling with our comprehensive course. Learn simulation techniques, battery behavior, and optimization strategies. Enroll for professional advancement today!',
       // price: '$100',
       duration: '1 day'
