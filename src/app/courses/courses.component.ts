@@ -11,9 +11,9 @@ export class CoursesComponent implements OnInit {
       //img: '../../assets/01.png',
       img: 'https://static.wixstatic.com/media/fc7570_edede96df98b4bc5b8529d1846dac713~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
       title: 'Introduction to Electric Vehicles ',
-      description: 'Dive into the world of Electric Vehicles (EVs) with our comprehensive introductory course. 
-        Explore the fundamentals of EV technology, including design principles, battery systems, and charging infrastructure. 
-        Whether you are an enthusiast or industry professional, this course provides a solid foundation for understanding the future of transportation.',
+      description: 'Dive into the world of Electric Vehicles (EVs) with our comprehensive introductory course.',
+        'Explore the fundamentals of EV technology, including design principles, battery systems, and charging infrastructure.',
+        'Whether you are an enthusiast or industry professional, this course provides a solid foundation for understanding the future of transportation.',
       // price: '$100',
       duration: '1 day'
     },
