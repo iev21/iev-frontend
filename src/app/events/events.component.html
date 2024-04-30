@@ -14,10 +14,16 @@
     <div class="modal-content">
         <span class="close" (click)="closeRegistrationModal()">&times;</span>
         <h2>Register for {{ selectedEvent?.title }}</h2>
-        <!-- Add form fields for registration -->
-        <!-- For example: Name, Email, Phone, etc. -->
-        <form>
-            <!-- Form fields go here -->
+        <form (submit)="registerForEvent()">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" [(ngModel)]="registrationData.name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" [(ngModel)]="registrationData.email" required>
+            </div>
+            <!-- Add more form fields as needed -->
             <button type="submit">Submit</button>
         </form>
     </div>
