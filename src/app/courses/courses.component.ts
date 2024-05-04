@@ -10,7 +10,7 @@ export class CoursesComponent implements OnInit {
     {
       img: '../../assets/Introduction_to_electric_vehicles.jpeg',
       //img: 'https://static.wixstatic.com/media/fc7570_edede96df98b4bc5b8529d1846dac713~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
-      title: '<b>Introduction to Electric Vehicles</b>',
+      title: <b>'Introduction to Electric Vehicles'</b>,
       description: 'Explore the fundamentals of electric vehicles in our introductory course. Engaging lectures and practical demonstrations await. Join us today!',
       readmore: 'Hi',
       // price: '$100',
@@ -19,7 +19,7 @@ export class CoursesComponent implements OnInit {
     {
       img:'../../assets/Introduction_to_battery_technologies.jpeg',
       //img: 'https://static.wixstatic.com/media/fc7570_ac1f7e7e38a44bd2ab92fb30b5fa38d7~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
-      title: '<b>Introduction to Battery Technolgies</b>',
+      title: 'Introduction to Battery Technolgies',
       description: 'Explore foundational Battery Technologies with our comprehensive course. Gain insights, skills, and practical knowledge essential for todays energy innovation.',
       readmore: 'Hi',
       //price: '$100',
@@ -28,7 +28,7 @@ export class CoursesComponent implements OnInit {
     {
       img:'../../assets/Introduction_to_motor_technologies.jpeg',
       //img: 'https://static.wixstatic.com/media/fc7570_2ed737b9f562470691056c62ffb8e47a~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
-      title: '<b>Introduction to Motor Technolgies</b>',
+      title: 'Introduction to Motor Technolgies',
       description: 'Dive into the essentials of Motor Technologies with our introductory course. Discover motor design, operation, and real-world applications. Enroll today!',
       readmore: 'Hi',
       // price: '$100',
