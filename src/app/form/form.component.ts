@@ -17,7 +17,7 @@ export class FormComponent {
     lastName: '',
     phoneNumber: '',
     description: '',
-    email:''
+    emailId:''
   };
 
   submitForm() {
