@@ -12,6 +12,7 @@ export class CoursesComponent implements OnInit {
       //img: 'https://static.wixstatic.com/media/fc7570_edede96df98b4bc5b8529d1846dac713~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
       title: 'Introduction to Electric Vehicles ',
       description: 'Explore the fundamentals of electric vehicles in our introductory course. Engaging lectures and practical demonstrations await. Join us today!',
+      Readmore: 'Hi',
       // price: '$100',
       duration: '1 day'
     },
