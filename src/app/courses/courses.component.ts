@@ -53,7 +53,7 @@ export class CoursesComponent implements OnInit {
       duration: '1 day'
     },
     {
-      img: '../../assets/Battery modeling_01.png',
+      img: '../../assets/Battery modeling_02.png',
       //img: 'https://static.wixstatic.com/media/fc7570_2ed737b9f562470691056c62ffb8e47a~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
       title: 'Introduction to Electric Vehicle Battery Modeling',
       description: 'Gain expertise in EV Battery Modeling with our comprehensive course. Learn simulation techniques, battery behavior, and optimization strategies. Enroll for professional advancement today!',
