@@ -53,7 +53,7 @@ export class CoursesComponent implements OnInit {
       duration: '1 day'
     },
     {
-      img: '../../assets/Battery modeling_01.jpeg',
+      img: '../../assets/Battery modeling_01.png',
       //img: 'https://static.wixstatic.com/media/fc7570_2ed737b9f562470691056c62ffb8e47a~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
       title: 'Introduction to Electric Vehicle Battery Modeling',
       description: 'Gain expertise in EV Battery Modeling with our comprehensive course. Learn simulation techniques, battery behavior, and optimization strategies. Enroll for professional advancement today!',
@@ -107,7 +107,7 @@ export class CoursesComponent implements OnInit {
       duration: '4 weeks'
     },
     {
-      img: '../../assets/Advanced_Battery modeling.png',
+      img: '../../assets/Advanced_Battery modeling_01.png',
       //img: 'https://static.wixstatic.com/media/fc7570_edede96df98b4bc5b8529d1846dac713~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
       title: 'Advanced Course on Li-ion battery modeling',
       description: 'Unlock the complexities of Li-ion Battery Modeling with our Advanced Course, delving into sophisticated techniques for cutting-edge electric vehicle engineering. Enroll at IEV Technologies now!',
