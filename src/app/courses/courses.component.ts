@@ -62,7 +62,8 @@ export class CoursesComponent implements OnInit {
       duration: '1 day'
     },
     {
-      img: 'https://static.wixstatic.com/media/fc7570_2ed737b9f562470691056c62ffb8e47a~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
+      img: '../../assets/BMS Algorithms.png',
+      //img: 'https://static.wixstatic.com/media/fc7570_2ed737b9f562470691056c62ffb8e47a~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
       title: 'Introduction to Battery Management Systems',
       description: 'Dive into Battery Management Systems with our comprehensive course. Explore BMS architecture, algorithms, and integration. Enroll now for expert insights!',
       readmore: 'Hi',
