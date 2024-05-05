@@ -30,6 +30,22 @@ export class FormComponent {
         this.successMessage=false
       },5000)
     });
+  }else {
+      // Form is invalid, display error message or handle accordingly
+      console.log('Form is invalid. Please fill in all required fields.');
+    }
+  }
+
+  // Method to check if the form is valid
+  private isFormValid(): boolean {
+    // Check if all required fields are filled
+    return (
+      this.formData.firstName.trim() !== '' &&
+      this.formData.lastName.trim() !== '' &&
+      this.formData.phoneNumber.trim() !== '' &&
+      this.formData.description.trim() !== '' &&
+      this.formData.emailId.trim() !== ''
+    );
   }
 }
 
