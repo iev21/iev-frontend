@@ -89,7 +89,8 @@ export class CoursesComponent implements OnInit {
       duration: '3 days'
     },
     {
-      img: 'https://static.wixstatic.com/media/fc7570_ac1f7e7e38a44bd2ab92fb30b5fa38d7~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
+      img: '../../assets/Advanced_Battery modeling_01.png',
+      //img: 'https://static.wixstatic.com/media/fc7570_ac1f7e7e38a44bd2ab92fb30b5fa38d7~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
       title: 'Equivalent Circuit based modeling of Li - Ion Batteries',
       description: 'Dive deeper into Li-Ion Battery Modeling with our Intermediate Level Course, mastering Equivalent Circuit-based techniques for advanced electric vehicle engineering. Join IEV Technologies today!',
       readmore: 'Hi',
@@ -102,15 +103,6 @@ export class CoursesComponent implements OnInit {
       img: 'https://static.wixstatic.com/media/fc7570_edede96df98b4bc5b8529d1846dac713~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
       title: 'Advance Course on BEV Powertrain Modeling & Simulations',
       description: 'Explore cutting-edge BEV Powertrain Modeling & Simulations with our Advanced Course, empowering engineers to innovate in electric vehicle technology. Join IEV Technologies for unparalleled expertise!',
-      readmore: 'Hi',
-      // price: '$100',
-      duration: '4 weeks'
-    },
-    {
-      img: '../../assets/Advanced_Battery modeling_01.png',
-      //img: 'https://static.wixstatic.com/media/fc7570_edede96df98b4bc5b8529d1846dac713~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
-      title: 'Advanced Course on Li-ion battery modeling',
-      description: 'Unlock the complexities of Li-ion Battery Modeling with our Advanced Course, delving into sophisticated techniques for cutting-edge electric vehicle engineering. Enroll at IEV Technologies now!',
       readmore: 'Hi',
       // price: '$100',
       duration: '4 weeks'
