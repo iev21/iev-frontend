@@ -82,7 +82,7 @@ export class CoursesComponent implements OnInit {
   ];
   public intermediateCourseList: Array<any> = [
     {
-      img: '../../assets/Intermediate Powertrain Simulations_01.png',
+      img: '../../assets/Advanced_Powertrain_Simulation.png',
       //img: 'https://static.wixstatic.com/media/fc7570_edede96df98b4bc5b8529d1846dac713~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
       title: 'Battery Eelectric Vehicle Powertrain Simulation Course',
       description: 'Explore advanced BEV Powertrain Simulation techniques in our Intermediate Level course, designed by IEV Technologies for aspiring electric vehicle engineers.',
