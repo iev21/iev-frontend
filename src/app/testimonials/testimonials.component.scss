@@ -30,7 +30,7 @@
     justify-content: space-evenly; // Align items with equal space between them
     transition: transform 0.3s ease; /* Smooth transition for scroll effect */
     // animation: scroll 30s linear infinite; /* Animation for scrolling */
-    animation: scroll 60s ease-in-out infinite; /* Animation for scrolling with ease-in-out timing function */
+    animation: scroll 0.60s ease-in-out infinite; /* Animation for scrolling with ease-in-out timing function */
     padding: 30px 10%; // Add padding of 30 pixels on the top and bottom, 10% of the container width on the left and right
     overflow-y: auto; // Add vertical scroll if testimonials overflow the container
 
