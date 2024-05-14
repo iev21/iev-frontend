@@ -1,107 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testimonials</title>
-    <style>
-        /* Your existing CSS code for testimonials */
-        .header {
-            text-align: center;
-            font-size: 24px;
-            font-weight: 700;
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-        .testimonials {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .testimonials__div {
-            display: none;
-            width: 100%;
-            max-width: 600px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .testimonials__div.active {
-            display: block;
-        }
-        .innertext {
-            font-size: 16px;
-        }
-    </style>
-</head>
-<body>
-    <div class="header">
-        What our clients say
-    </div>
+<!-- This HTML code represents a header and testimonials section -->
+<!-- Testimonials Container with Navigation -->
+<div class="header">
+    What our clients say
+</div>
+<!-- <div class="testimonials-container"> -->
+<!-- Left Arrow -->
+<!-- <div class="arrow left-arrow" (click)="scrollTestimonials('left')">&#10094;</div> -->
+<!-- Testimonials Content -->
     <div class="testimonials">
-        <!-- Testimonial 1 -->
-        <div class="testimonials__div active">
-            <div>• • •</div>
+        <!-- Testimonial -->
+        <div class="testimonials__div">
+            <div>• • •</div> <!-- Testimonial indicator -->
+            <!-- <div class="testimonial-image"> -->
+            <!-- <img src="path/to/image1.jpg" alt="Testimonial Image 1"> -->
+            <!-- </div> -->
             <div class="innertext">
-                <p><b>Course Name:</b> Introductory course on Electric Vehicles</p>
+                <!-- Testimonial content -->
+                <p><b>Course Name:</b></p>
+                <p>Introductory course on Electric Vehicles</p>
+                <!--<p>Instructor: [Instructor's Name]</p>-->
+                <!-- <p>Institution: IEV Technologies</p> -->
                 <p>Excellent course on Introduction to Electric Vehicles from iEV Technologies.</p> 
                 <p>Engaging content, insightful lectures, and practical demonstrations.</p>
                 <p>Highly recommend for anyone interested in understanding the fundamentals of EVs.</p>
-                <p>Thank you for the opportunity to participate in this course.</p>
-                <p>Sincerely,</p>
+                <p>Thank you for the opportunity to participate in this course. </p>
+                <!-- <p>We look forward to applying our learnings and contributing to the advancement of electric vehicle technology.</p>-->
+                <p>Sincerely,
                 <p>Sri Varshini</p>
+                <!-- <p>[Student ID/Contact Information]</p> -->
             </div>
         </div>
-        <!-- Testimonial 2 -->
+        <!-- Repeat this structure for additional testimonials -->
+        <!-- Testimonial -->
         <div class="testimonials__div">
-            <div>• • •</div>
+            <div>• • •</div> <!-- Testimonial indicator -->
             <div class="innertext">
-                <p><b>Course Name:</b> Introductory Course on Battery Technologies</p>
+                <!-- Testimonial content -->
+                <p><b>Course Name:</b></p>
+                <p>Introductory Course on Battery Technologies</p>
+                <!--<p>Instructor: [Instructor's Name]</p>-->
+                <!-- <p>Institution: IEV Technologies</p> -->
                 <p>Outstanding introductory course on Battery Technologies by iEV Technologies.</p> 
                 <p>The course material was captivating, with lectures that offered valuable insights and practical demonstrations that proved to be extremely helpful.</p>
-                <p>I highly recommend this course to anyone seeking to grasp the fundamentals of battery technologies.</p>
-                <p>Many thanks for the opportunity to be part of this learning experience.</p>
-                <p>Sincerely,</p>
-                <p>Srinivas</p>
+                <p>I highly recommend this course to anyone seeking to grasp the fundamentals of battery technologies. </p>
+                <p>Many thanks for the opportunity to be part of this learning experience. </p>
+                <!-- <p>We look forward to applying our learnings and contributing to the advancement of electric vehicle technology.</p>-->
+                <p>Sincerely,
+                <p>Srinivas </p>
+                <!-- <p>[Student ID/Contact Information]</p> -->
             </div>
         </div>
-        <!-- Testimonial 3 -->
+        <!-- Testimonial -->
         <div class="testimonials__div">
-            <div>• • •</div>
+            <div>• • •</div> <!-- Testimonial indicator -->
             <div class="innertext">
-                <p><b>Course Name:</b> Introduction to BEV Powertrain Simulations</p>
+                <!-- Testimonial content -->
+                <p><b>Course Name:</b></p>
+                <p>Introduction to BEV Powertrain Simulations</p>
+                <!-- <p>Instructor: [Instructor's Name]</p> -->
+                <!-- <p>Institution: IEV Technologies</p> -->
                 <p>Remarkable experience with the course on simulating Battery Electric Vehicle (BEV) powertrains.</p> 
                 <p>The course content was thorough, offering invaluable insights into BEV powertrain simulation.</p>
-                <p>Engaging lectures and hands-on exercises greatly enriched the learning journey.</p>
+                <p> Engaging lectures and hands-on exercises greatly enriched the learning journey.</p>
                 <p>I highly recommend this course to anyone eager to delve into the realm of BEV technology.</p>
-                <p>Many thanks for the opportunity to be part of this learning experience.</p>
-                <p>Sincerely,</p>
-                <p>Nithin</p>
+                <!-- <p>We look forward to applying our learnings and contributing to the advancement of electric vehicle technology.</p>-->
+                <p>Sincerely,
+                <p> Nithin</p>
+                <!-- <p>[Student ID/Contact Information]</p> -->
             </div>
         </div>
-    </div>
+        <!-- Repeat this structure for additional testimonials -->
 
-    <!-- JavaScript code for automatic slideshow -->
-    <script>
-        function startSlideshow() {
-            var testimonials = document.querySelectorAll('.testimonials__div');
-            var index = 0;
-            function nextTestimonial() {
-                testimonials.forEach(function(testimonial) {
-                    testimonial.classList.remove('active');
-                });
-                testimonials[index].classList.add('active');
-                index++;
-                if (index >= testimonials.length) {
-                    index = 0;
-                }
-            }
-            nextTestimonial();
-            setInterval(nextTestimonial, 5000); // Adjust interval time as needed
-        }
-        window.onload = startSlideshow;
-    </script>
-</body>
-</html>
+    </div>
+    
+    <!-- Right Arrow -->
+    <!--<div class="arrow right-arrow" (click)="scrollTestimonials('right')">&#10095;</div>-->
+<!--</div>-->
+
+<!-- // This HTML code consists of a header and a testimonials section. 
+// The header has the text "What our clients say". 
+// The testimonials section contains three testimonials represented by three div elements with the class testimonials__div. 
+// Each testimonial consists of a testimonial indicator (represented by "• • •") and testimonial content (represented by an empty div with the class innertext). 
+// The testimonial content will typically contain text or other content provided by the clients.-->
