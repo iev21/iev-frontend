@@ -53,7 +53,7 @@ export class CoursesComponent implements OnInit {
       duration: '1 day'
     },
     {
-      img: '../../assets/Battery modeling_02.png',
+      img: '../../assets/Battery Modeling.png',
       //img: 'https://static.wixstatic.com/media/fc7570_2ed737b9f562470691056c62ffb8e47a~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
       title: 'Introduction to Electric Vehicle Battery Modeling',
       description: 'Gain expertise in EV Battery Modeling with our comprehensive course. Learn simulation techniques, battery behavior, and optimization strategies. Enroll for professional advancement today!',
@@ -82,7 +82,7 @@ export class CoursesComponent implements OnInit {
   ];
   public intermediateCourseList: Array<any> = [
     {
-      img: '../../assets/Intermediate Powertrain Simulations_02.png',
+      img: '../../assets/Intermediate Powertrain Simulations.png',
       //img: 'https://static.wixstatic.com/media/fc7570_edede96df98b4bc5b8529d1846dac713~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
       title: 'Battery Eelectric Vehicle Powertrain Simulation Course',
       description: 'Explore advanced BEV Powertrain Simulation techniques in our Intermediate Level course, designed by IEV Technologies for aspiring electric vehicle engineers.',
@@ -91,7 +91,7 @@ export class CoursesComponent implements OnInit {
       duration: '3 days'
     },
     {
-      img: '../../assets/Equivalent Circuit based modeling of Li - Ion Batteries.png',
+      img: '../../assets/ECM Battery Modeling.png',
       //img: 'https://static.wixstatic.com/media/fc7570_ac1f7e7e38a44bd2ab92fb30b5fa38d7~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
       title: 'Equivalent Circuit based modeling of Li - Ion Batteries',
       description: 'Dive deeper into Li-Ion Battery Modeling with our Intermediate Level Course, mastering Equivalent Circuit-based techniques for advanced electric vehicle engineering. Join IEV Technologies today!',
@@ -102,7 +102,7 @@ export class CoursesComponent implements OnInit {
   ];
  public advancedCourseList: Array<any> = [
     {
-      img: '../../assets/Advanced_Powertrain_Simulation.png',
+      img: '../../assets/Advanced Powertrain Simulations.png',
       //img: 'https://static.wixstatic.com/media/fc7570_edede96df98b4bc5b8529d1846dac713~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
       title: 'Advance Course on BEV Powertrain Modeling & Simulations',
       description: 'Explore cutting-edge BEV Powertrain Modeling & Simulations with our Advanced Course, empowering engineers to innovate in electric vehicle technology. Join IEV Technologies for unparalleled expertise!',
