@@ -20,6 +20,7 @@
     <button (click)="backCourses()" style="cursor: pointer;">&lt; Back</button>
         <div class="content__header">About the course</div>
         <div class="content__description" [innerHTML]="safeDescription">
+          <embed [src]="course.pdfPath" type="application/pdf" width="100%" height="600px" />
         </div>
         <!-- <div class="content__header">Your Instructor</div> -->
         <!-- <div class="content__instructor">Venu</div> -->
