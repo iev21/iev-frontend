@@ -16,81 +16,12 @@ export class CoursesComponent implements OnInit {
       //readmore: 'We will send you a course brochure with your registered information after you submit your information to our Contact Us page.',
       //pdfPath:'../../assets/eMobil digital course.pdf',
       readmore:'
-        <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Introduction to Electric Vehicles</title>
 </head>
 <body>
 
-<h1>Introduction to Electric Vehicles</h1>
+<h1>Introduction to Electric Vehicles</h1>',
 
-<h2>Course Overview:</h2>
-<p>This introductory course provides a comprehensive understanding of electric vehicles (EVs) and their impact on the automotive industry. Participants will delve into various aspects of EV technology, from basic principles to advanced concepts.</p>
-
-<h2>Course Topics:</h2>
-<ol>
-  <li>
-    <h3>Fundamentals of Electric Vehicles:</h3>
-    <ul>
-      <li>History and evolution of electric vehicles</li>
-      <li>Basic components of an electric vehicle</li>
-      <li>Types of electric vehicles: BEVs, PHEVs, and HEVs</li>
-    </ul>
-  </li>
-  <li>
-    <h3>Electric Vehicle Technologies:</h3>
-    <ul>
-      <li>Battery technology and energy storage systems</li>
-      <li>Electric motors and drivetrains</li>
-      <li>Charging infrastructure and standards</li>
-    </ul>
-  </li>
-  <li>
-    <h3>Environmental Impact and Sustainability:</h3>
-    <ul>
-      <li>Benefits of electric vehicles for the environment</li>
-      <li>Reduction of greenhouse gas emissions</li>
-      <li>Role of electric vehicles in combating climate change</li>
-    </ul>
-  </li>
-  <li>
-    <h3>Market Trends and Future Outlook:</h3>
-    <ul>
-      <li>Current state of the electric vehicle market</li>
-      <li>Emerging trends in electric vehicle adoption</li>
-      <li>Potential challenges and opportunities for the future</li>
-    </ul>
-  </li>
-</ol>
-
-<h2>Course Format:</h2>
-<ul>
-  <li><strong>Duration:</strong> 1 day</li>
-  <li><strong>Delivery Method:</strong> Interactive lectures, case studies, and hands-on demonstrations</li>
-  <li><strong>Target Audience:</strong> Engineers, researchers, policymakers, and enthusiasts interested in electric vehicle technology</li>
-</ul>
-
-<h2>Why Enroll in This Course?</h2>
-<ul>
-  <li>Gain a solid foundation in electric vehicle technology</li>
-  <li>Stay updated with the latest trends and advancements in the EV industry</li>
-  <li>Network with professionals and experts in the field</li>
-  <li>Prepare for future career opportunities in electric mobility</li>
-</ul>
-
-<h2>Course Materials:</h2>
-<p>Participants will receive:</p>
-<ul>
-  <li>Course slides and materials</li>
-  <li>Additional resources and references</li>
-  <li>Certificate of completion</li>
-</ul>
-
-</body>
-</html>',
       // price: '$100',
       duration: '1 day'
     },
