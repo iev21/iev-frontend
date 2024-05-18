@@ -16,6 +16,7 @@ export class CoursesComponent implements OnInit {
       //readmore: 'We will send you a course brochure with your registered information after you submit your information to our Contact Us page.',
       //pdfPath:'../../assets/eMobil digital course.pdf',
       // price: '$100',
+      readmore:'../../assets/Introduction_to_electric_vehicles.html',
       duration: '1 day'
     },
     {
