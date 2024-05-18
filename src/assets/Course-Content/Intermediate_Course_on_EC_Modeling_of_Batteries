@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #00509e;
+        }
+        h1 {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #e0e7ff;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Equivalent Circuit Based Modeling of Li-Ion Batteries</h1>
+
+    <h2>Course Description:</h2>
+    <p>This intermediate-level course provides a comprehensive understanding of equivalent circuit-based modeling techniques for Li-Ion batteries. 
+Students will learn how to develop, analyze, and implement equivalent circuit models (ECMs) to simulate the behavior of Li-Ion batteries. 
+The course includes theoretical concepts, practical modeling exercises, and the use of simulation tools.</p>
+
+    <h2>Course Objectives:</h2>
+    <p>By the end of this course, students will be able to:</p>
+    <ul>
+        <li>Understand the principles of equivalent circuit models for Li-Ion batteries.</li>
+        <li>Develop and validate equivalent circuit models.</li>
+        <li>Analyze the performance of Li-Ion batteries using ECMs.</li>
+        <li>Use simulation tools to implement and test ECMs.</li>
+        <li>Optimize battery performance through advanced modeling techniques.</li>
+    </ul>
+
+    <h2>Course Outline:</h2>
+
+    <h3>Module 1: Introduction to Li-Ion Batteries</h3>
+    <ul>
+        <li>Overview of Li-Ion battery technology</li>
+        <li>Basic operation and characteristics of Li-Ion batteries</li>
+        <li>Importance of modeling in battery design and analysis</li>
+    </ul>
+
+    <h3>Module 2: Fundamentals of Equivalent Circuit Models (ECMs)</h3>
+    <ul>
+        <li>Introduction to equivalent circuit models</li>
+        <li>Basic components of ECMs: resistors, capacitors, and voltage sources</li>
+        <li>Common ECM topologies for Li-Ion batteries</li>
+    </ul>
+
+    <h3>Module 3: Developing ECMs for Li-Ion Batteries</h3>
+    <ul>
+        <li>Steps in developing an ECM</li>
+        <li>Parameter identification and estimation</li>
+        <li>Modeling dynamic behavior of Li-Ion batteries</li>
+    </ul>
+
+    <h3>Module 4: State of Charge (SOC) Estimation</h3>
+    <ul>
+        <li>Importance of SOC estimation</li>
+        <li>SOC estimation methods using ECMs</li>
+        <li>Implementing SOC estimation in simulation tools</li>
+    </ul>
+
+    <h3>Module 5: Thermal Modeling of Li-Ion Batteries</h3>
+    <ul>
+        <li>Thermal challenges in Li-Ion batteries</li>
+        <li>Incorporating thermal effects into ECMs</li>
+        <li>Simulation of thermal behavior in batteries</li>
+    </ul>
+
+    <h3>Module 6: Validation and Calibration of ECMs</h3>
+    <ul>
+        <li>Importance of model validation and calibration</li>
+        <li>Techniques for validating ECMs</li>
+        <li>Calibration of model parameters</li>
+    </ul>
+
+    <h3>Module 7: Advanced ECM Techniques</h3>
+    <ul>
+        <li>Improving model accuracy and robustness</li>
+        <li>Adaptive and real-time ECMs</li>
+        <li>Integration with battery management systems (BMS)</li>
+    </ul>
+
+    <h3>Module 8: Simulation Tools and Software</h3>
+    <ul>
+        <li>Overview of simulation tools</li>
+        <li>Setting up and running ECM simulations</li>
+        <li>Analyzing and interpreting simulation results</li>
+    </ul>
+
+    <h3>Module 9: Practical Applications and Case Studies</h3>
+    <ul>
+        <li>Case studies of ECMs in real-world applications</li>
+        <li>Comparative analysis of different ECM approaches</li>
+        <li>Lessons learned and best practices</li>
+    </ul>
+
+    <h3>Module 10: Future Trends and Innovations</h3>
+    <ul>
+        <li>Emerging trends in battery modeling</li>
+        <li>Role of AI and machine learning in ECMs</li>
+        <li>Future directions in battery technology and modeling</li>
+    </ul>
+
+    <h2>Assessment:</h2>
+    <ul>
+        <li>Quizzes and assignments to reinforce learning</li>
+        <li>Midterm report covering ECM fundamentals and development</li>
+        <li>Assignments: Periodic assignments including readings, discussions, and practical activities</li>
+        <li>Participation: Active participation in discussions and activities</li>
+        <li>Final project/presentation on a specific ECM application</li>
+    </ul>
+
+    <h2>Recommended Textbooks and Resources:</h2>
+    <ul>
+        <li>"Battery Management Systems: Volume I: Battery Modeling" by Gregory L. Plett</li>
+        <li>"Battery Management Systems: Volume II: Equivalent-Circuit Methods" by Gregory L. Plett</li>
+        <li>"The Handbook of Lithium-Ion Battery Pack Design" by John Warner</li>
+        <li>"Battery Systems Engineering" by Christopher D. Rahn and Chao-Yang Wang</li>
+        <li>"Introduction to Electrochemical Science and Engineering" by Serguei N. Lvov</li>
+        <li>"Linden's Handbook of Batteries" by Thomas Reddy</li>
+        <li>Relevant academic papers and industry reports</li>
+    </ul>
+
+        <h2>Instructor</h2>
+        <p><strong>Name:</strong> <br>
+        <strong>Email:</strong> ievtechnologies21@gmail.com<br>
+        <!-- <strong>Office Hours:</strong> Mondays and Wednesdays, 2:00 PM - 4:00 PM</p> -->
+
+        <div class="footer">
+            &copy; 2024 Inermediate Course on EC modeling of Li-Ion Batteries
+        </div>
+    </div>
+</body>
+</html>
