@@ -27,7 +27,7 @@
 
 .testimonials {
     display: flex; // Use flexbox layout
-    justify-content: space-between; // Align items with equal space between them
+    justify-content: space-evenly; // Align items with equal space between them
     transition: transform 0.3s ease; /* Smooth transition for scroll effect */
     // animation: scroll 30s linear infinite; /* Animation for scrolling */
     // animation: scroll 30s ease-in-out infinite; /* Animation for scrolling with ease-in-out timing function */
@@ -117,7 +117,6 @@
         flex-direction: row; /* Stack testimonials vertically */
         padding: 10px 5%; /* Add padding */
         align-items: center; /* Center-align items */
-        
         /* Nested styles for testimonials */
         &__div{
             height: 100%; /* Set height */
@@ -130,5 +129,6 @@
                 font-size: 12px;
             }
         }
+        
     }
 }
