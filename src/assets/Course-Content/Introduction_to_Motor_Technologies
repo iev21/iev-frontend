@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction to Electric Vehicle Motor Technologies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #00509e;
+        }
+        h1 {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #e0e7ff;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
     <h1>Introduction to Electric Vehicle Motor Technologies</h1>
 
     <h2>Course Description:</h2>
@@ -115,9 +153,8 @@
     <h2>Assessment:</h2>
     <ul>
         <li>Quizzes and assignments to reinforce learning</li>
-        <li>Midterm exam covering basic concepts and motor types</li>
-        <li>Final project/presentation on a specific EV motor technology or application</li>
-        <li>Final exam to assess overall understanding of course material</li>
+        <li>Assignments: Periodic assignments including readings, discussions, and practical activities</li>
+        <li>Participation: Active participation in discussions and activities</li>
     </ul>
 
     <h2>Recommended Textbooks and Resources:</h2>
@@ -127,5 +164,15 @@
         <li>"Automotive Electric Motors: Performance, Efficiency, and Emissions" by Mark Ferrell</li>
         <li>Relevant academic papers and industry reports</li>
     </ul>
+
+        <h2>Instructor</h2>
+        <p><strong>Name:</strong> <br>
+        <strong>Email:</strong> ievtechnologies21@gmail.com<br>
+        <!-- <strong>Office Hours:</strong> Mondays and Wednesdays, 2:00 PM - 4:00 PM</p> -->
+
+        <div class="footer">
+            &copy; 2024 Introduction to Motor Technologies Course
+        </div>
+    </div>
 </body>
 </html>
