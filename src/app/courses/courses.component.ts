@@ -16,7 +16,7 @@ export class CoursesComponent implements OnInit {
       //readmore: 'We will send you a course brochure with your registered information after you submit your information to our Contact Us page.',
       //pdfPath:'../../assets/eMobil digital course.pdf',
       // price: '$100',
-      readmore:'../../assets/Introduction_to_electric_vehicles_02.html',
+      readmore:'../../assets/Course-Content/Introduction_to_Electric_Vehiicles.html',
       duration: '1 day'
     },
     {
@@ -24,7 +24,7 @@ export class CoursesComponent implements OnInit {
       //img: 'https://static.wixstatic.com/media/fc7570_ac1f7e7e38a44bd2ab92fb30b5fa38d7~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
       title: 'Introduction to Battery Technolgies',
       description: 'Explore foundational Battery Technologies with our comprehensive course. Gain insights, skills, and practical knowledge essential for todays energy innovation.',
-      readmore: 'We will send you a course brochure with your registered information after you submit your information to our Contact Us page.',
+      readmore: '../../assets/Course-Content/Introduction_to_Battery_Technologies.html',
       //price: '$100',
       duration: '1 day'
     },
