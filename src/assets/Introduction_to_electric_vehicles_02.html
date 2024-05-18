@@ -53,6 +53,9 @@
             overflow: hidden;
             border-radius: 5px;
         }
+        .show-panel {
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -100,23 +103,16 @@
             </ul>
         </div>
 
-        <!-- Add more buttons and panels for additional weeks -->
-
         <script>
-            var acc = document.getElementsByClassName("accordion");
-            var i;
+            var acc = document.querySelectorAll('.accordion');
 
-            for (i = 0; i < acc.length; i++) {
-                acc[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
+            acc.forEach(function(el) {
+                el.addEventListener('click', function() {
+                    this.classList.toggle('active');
                     var panel = this.nextElementSibling;
-                    if (panel.style.display === "block") {
-                        panel.style.display = "none";
-                    } else {
-                        panel.style.display = "block";
-                    }
+                    panel.classList.toggle('show-panel');
                 });
-            }
+            });
         </script>
     </div>
 </body>
