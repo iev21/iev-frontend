@@ -33,7 +33,7 @@ export class CoursesComponent implements OnInit {
       //img: 'https://static.wixstatic.com/media/fc7570_2ed737b9f562470691056c62ffb8e47a~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
       title: 'Introduction to Motor Technolgies',
       description: 'Dive into the essentials of Motor Technologies with our introductory course. Discover motor design, operation, and real-world applications. Enroll today!',
-      readmore: 'We will send you a course brochure with your registered information after you submit your information to our Contact Us page.',
+      readmore: '../../assets/Course-Content/Introduction_to_Motor_Technologies.html',
       // price: '$100',
       duration: '1 day'
     },
