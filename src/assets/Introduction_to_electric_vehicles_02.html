@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction to Electric Vehicles</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -31,35 +29,28 @@
         h1 {
             text-align: center;
         }
-        .tab {
-            overflow: hidden;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-        .tab button {
+        .accordion {
             background-color: #f0f0f0;
-            border: none;
-            outline: none;
+            color: #444;
             cursor: pointer;
-            padding: 10px 20px;
-            transition: 0.3s;
-            font-size: 16px;
-            border-radius: 5px 5px 0 0;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            transition: 0.4s;
+            border-radius: 5px;
+            margin-bottom: 10px;
         }
-        .tab button.active {
+        .active, .accordion:hover {
             background-color: #ddd;
         }
-        .tabcontent {
+        .panel {
+            padding: 0 18px;
             display: none;
-            padding: 20px;
-            border-top: none;
-            border-radius: 0 0 5px 5px;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: #666;
+            background-color: white;
+            overflow: hidden;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -67,24 +58,9 @@
     <div class="container">
         <h1>Introduction to Electric Vehicles</h1>
         <p>This course provides an introductory overview of electric vehicles (EVs), focusing on their history, technology, and impact on society and the environment. It aims to equip students with a foundational understanding of EV components, functionality, and the factors driving the transition from traditional internal combustion engine (ICE) vehicles to electric mobility. The course covers technological advancements, market trends, policy frameworks, and the environmental and economic implications of electric vehicles.</p>
-
-      <div class="tab">
-            <button class="tablinks" onclick="openWeek(event, 'week1')" id="defaultOpen">Week 1</button>
-            <button class="tablinks" onclick="openWeek(event, 'week2')">Week 2</button>
-            <!-- Add more buttons for additional weeks -->
-            <button class="tablinks" onclick="openWeek(event, 'week3')">Week 3</button>
-            <button class="tablinks" onclick="openWeek(event, 'week4')">Week 4</button>
-            <button class="tablinks" onclick="openWeek(event, 'week5')">Week 5</button>
-            <button class="tablinks" onclick="openWeek(event, 'week6')">Week 6</button>
-            <button class="tablinks" onclick="openWeek(event, 'week7')">Week 7</button>
-            <button class="tablinks" onclick="openWeek(event, 'week8')">Week 8</button>
-        </div>
-
-      
-        <div id="week1" class="tabcontent">
-            <h2>Week 1: Introduction and History of Electric Vehicles</h2>
-        </div>
-        <div class="week-content">
+        
+                <button class="accordion">Week 1: Introduction and History of Electric Vehicles</button>
+        <div class="panel">
             <ul>
                 <li>Lecture: Overview of the Course and Introduction to Electric Vehicles</li>
                 <li>Reading: History and Evolution of Electric Vehicles</li>
@@ -93,10 +69,8 @@
             </ul>
         </div>
 
-        <div id="week2" class="tabcontent">
-            <h2>Week 2: Basic Principles of Electric Vehicles</h2>
-        </div>
-        <div class="week-content">
+        <button class="accordion">Week 2: Basic Principles of Electric Vehicles</button>
+        <div class="panel">
             <ul>
                 <li>Lecture: Fundamental Concepts of Electricity and Electric Motors</li>
                 <li>Reading: Understanding Electric Power and Energy Storage</li>
@@ -107,10 +81,8 @@
 
         <!-- Repeat the above structure for each week -->
       
-      <div id="week3" class="tabcontent">
-        <h2>Week 3: EV Components and Architecture</h2>
-      </div>
-      <div class="week-content">
+        <button class="accordion">Week 3: EV Components and Architecture</button>
+        <div class="panel">
         <ul>
             <li>Lecture: Key Components of Electric Vehicles: Battery, Motor, and Controller</li>
             <li>Reading: Types of Batteries Used in EVs</li>
@@ -119,10 +91,8 @@
         </ul>
       </div>
 
-      <div id="week4" class="tabcontent">
-        <h2>Week 4: Battery Technology</h2>
-      </div>
-      <div class="week-content">
+        <button class="accordion">Week 4: Battery Technology</button>
+        <div class="panel">
         <ul>
             <li>Lecture: Battery Technologies: Types, Charging, and Management</li>
             <li>Reading: Lithium-Ion vs. Solid-State Batteries</li>
@@ -131,10 +101,8 @@
         </ul>
       </div>
 
-      <div id="week5" class="tabcontent">
-        <h2>Week 5: Charging Infrastructure</h2>
-      </div>
-      <div class="week-content">
+        <button class="accordion">Week 5: Charging Infrastructure</button>
+        <div class="panel">
         <ul>
             <li>Lecture: Types of Charging: AC vs. DC, Levels of Charging</li>
             <li>Reading: Infrastructure for Electric Vehicles: Public and Private Solutions</li>
@@ -143,10 +111,8 @@
         </ul>
       </div>
 
-      <div id="week6" class="tabcontent">
-        <h2>Week 6: Environmental and Economic Impacts</h2>
-      </div>
-      <div class="week-content">
+        <button class="accordion">Week 6: Environmental and Economic Impacts</button>
+        <div class="panel">
         <ul>
             <li>Lecture: Environmental Benefits of Electric Vehicles</li>
             <li>Reading: Economic Analysis of EVs vs. ICE Vehicles</li>
@@ -155,10 +121,8 @@
         </ul>
       </div>
 
-      <div id="week7" class="tabcontent">
-        <h2>Week 7: Policy and Market Trends</h2>
-      </div>
-      <div class="week-content">
+        <button class="accordion">Week 7: Policy and Market Trends</button>
+        <div class="panel">
         <ul>
             <li>Lecture: Global Policies and Incentives for Electric Vehicles</li>
             <li>Reading: Current Market Trends and Future Projections</li>
@@ -167,10 +131,8 @@
         </ul>
       </div>
 
-      <div id="week8" class="tabcontent">
-        <h2>Week 8: Future of Electric Vehicles</h2>
-      </div>
-      <div class="week-content">
+        <button class="accordion">Week 8: Future of Electric Vehicles</button>
+        <div class="panel">
         <ul>
             <li>Lecture: Emerging Technologies and Innovations in EVs</li>
             <li>Reading: Autonomous and Connected EVs</li>
@@ -187,7 +149,7 @@
             <li>Final Project: Group project focusing on a specific aspect of electric vehicle technology or policy.</li>
             <li>Participation: Active participation in discussions and activities.</li>
         </ul>
-
+      
         <h2>Recommended Reading</h2>
         <ul>
             <li>"Electric Vehicle Engineering" by James Larminie and John Lowry</li>
@@ -210,26 +172,26 @@
         <div class="footer">
             &copy; 2024 Introduction to Electric Vehicles Course
         </div>
-    </div>
-    
-    <script>
-        function openWeek(evt, weekName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(weekName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
 
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
-    </script>
+      
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            }
+        </script>
+    </div>
 </body>
 </html>
 
