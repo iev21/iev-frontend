@@ -89,7 +89,7 @@ export class CoursesComponent implements OnInit {
       //img: 'https://static.wixstatic.com/media/fc7570_edede96df98b4bc5b8529d1846dac713~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
       title: 'Battery Eelectric Vehicle Powertrain Simulation Course',
       description: 'Explore advanced BEV Powertrain Simulation techniques in our Intermediate Level course, designed by IEV Technologies for aspiring electric vehicle engineers.',
-      readmore: 'We will send you a course brochure with your registered information after you submit your information to our Contact Us page.',
+      readmore: '../../assets/Course-Content/Intermediate_BEV_Powertrain_Simulation_Course.html',
       // price: '$100',
       duration: '3 days'
     },
