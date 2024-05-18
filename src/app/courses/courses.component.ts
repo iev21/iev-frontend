@@ -98,7 +98,7 @@ export class CoursesComponent implements OnInit {
       //img: 'https://static.wixstatic.com/media/fc7570_ac1f7e7e38a44bd2ab92fb30b5fa38d7~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
       title: 'Equivalent Circuit based modeling of Li - Ion Batteries',
       description: 'Dive deeper into Li-Ion Battery Modeling with our Intermediate Level Course, mastering Equivalent Circuit-based techniques for advanced electric vehicle engineering. Join IEV Technologies today!',
-      readmore: 'We will send you a course brochure with your registered information after you submit your information to our Contact Us page.',
+      readmore: '../../assets/Course-Content/Intermediate_Course_on_EC_Modeling_of_Batteries',
       // price: '$100',
       duration: '3 days'
     },
