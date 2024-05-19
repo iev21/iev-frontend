@@ -31,7 +31,8 @@ export class FooterComponent implements OnInit {
   // Determine the URL based on the platform
   switch (platform) {
       case 'linkedin':
-          url = 'https://www.linkedin.com/in/iev-technologies/'; // Replace with your LinkedIn URL
+          url = ' https://www.linkedin.com/company/iev-technologies/'; // Replace with your LinkedIn URL
+     
       
           break;
       case 'youtube':
