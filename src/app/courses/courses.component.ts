@@ -14,10 +14,8 @@ export class CoursesComponent implements OnInit {
       description: 'Explore the fundamentals of electric vehicles in our introductory course. Engaging lectures and practical demonstrations await. Join us today!',
       //readmore: '<ul> <li>explore the fundamentals of electric </li><li> engaging lectures and practical demonstrations</li>Explore the fundamentals of electric vehicles in our introductory course. Engaging lectures and practical demonstrations await. Join us today!</ul>',
       //readmore: 'We will send you a course brochure with your registered information after you submit your information to our Contact Us page.',
-      //pdfPath:'../../assets/eMobil digital course.pdf',
       // price: '$100',
-      // readmore:'../../assets/Course-Content/Introduction_to_Electric_Vehicles.html',
-      readmore:'../../assets/eMobil digital course.pdf',
+      readmore:'../../assets/Course-Content/Introduction_to_Electric_Vehicles.html',
       duration: '1 day'
     },
     {
