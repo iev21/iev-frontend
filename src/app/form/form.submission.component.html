@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-container {
+            max-width: 400px;
+            margin: auto;
+        }
+        .form-field {
+            margin-bottom: 15px;
+        }
+        .form-field label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-field input, .form-field textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .submit-button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Submit Your Information</h1>
+        <form id="submit-form">
+            <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('submit-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const scriptURL = 'YOUR_WEB_APP_URL'; // Replace with your Web App URL
+            const form = document.forms['submit-form'];
+            const formData = new FormData(form);
+
+            fetch(scriptURL, { method: 'POST', body: formData })
+                .then(response => response.json())
+                .then(result => {
+                    if (result.result === 'success') {
+                        alert('Form submitted successfully!');
+                        form.reset();
+                    } else {
+                        alert('There was an error submitting the form. Please try again.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    alert('There was an error submitting the form. Please try again.');
+                });
+        });
+    </script>
+</body>
+</html>
