@@ -113,7 +113,7 @@ export class CoursesComponent implements OnInit {
       duration: '4 weeks'
     },
        {
-      img: '../../assets/Course-Images/Advanced Powertrain Simulations_03.jpg',
+      img: '../../assets/Course-Images/Advanced Powertrain Simulations (2).png',
       //img: 'https://static.wixstatic.com/media/fc7570_edede96df98b4bc5b8529d1846dac713~mv2.jpg/v1/fill/w_410,h_243,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg',
       title: 'Advance Course on BEV Powertrain Modeling & Simulations',
       description: 'Explore cutting-edge BEV Powertrain Modeling & Simulations with our Advanced Course, empowering engineers to innovate in electric vehicle technology. Join IEV Technologies for unparalleled expertise!',
