@@ -90,8 +90,9 @@
                     top: 0px;
                     justify-content: space-between;
                     flex-direction: column;
+                    position: relative;
                     &__flex{
-                        display: flex;
+                        display: none;
                         padding-top: 30px;
                         .details{
                             font-size: 22px;
@@ -114,6 +115,7 @@
                         font-size: 30px;
                         font-weight: 600;
                         padding-top: 30px;
+                        display: none;
                     }
                     .button{
                         padding: 15px 25px;
@@ -121,6 +123,8 @@
                         width: 155px;
                         color: white;
                         text-align: center;
+                        position: absolute;
+                        top: 65%;
                     }
                 }
             }

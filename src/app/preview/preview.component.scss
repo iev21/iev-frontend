@@ -235,17 +235,23 @@
                     padding: 0px 10px; /* Padding for the content */
                     font-size: 13px; /* Font size for the content */
                     font-weight: 500; /* Font weight for the content */
+                    .img{
+                        text-align: start; 
+                    }
 
                     div {
                         padding: 3px 0px; /* Padding for divs */
-                        font-size: 10px; /* Font size for divs */
+                        font-size: 12px; /* Font size for divs */
 
                         img {
-                            height: 20px; /* Height of images */
-                            width: 20px; /* Width of images */
+                            height: 25px; /* Height of images */
+                            width: 25px; /* Width of images */
                         }
                     }
                 }
+            }
+            &__header{
+                font-size: 25px;
             }
         }
 
