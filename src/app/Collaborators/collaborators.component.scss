@@ -1,0 +1,52 @@
+/* styles.css */
+
+/* Basic reset and styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.collaborators-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.collaborators-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.collaborators-container {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: scrollCollaborators 15s linear infinite;
+}
+
+.collaborator {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.collaborator img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Keyframes for the scrolling animation */
+@keyframes scrollCollaborators {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
