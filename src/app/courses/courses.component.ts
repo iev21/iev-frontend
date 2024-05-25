@@ -16,7 +16,7 @@ export class CoursesComponent implements OnInit {
       //readmore: 'We will send you a course brochure with your registered information after you submit your information to our Contact Us page.',
       // price: '$100',
       readmore:'../../assets/Course-Content/Introduction_to_Electric_Vehicles.html',
-      duration: '1 day'
+      duration: '3 days'
     },
     {
       img:'../../assets/Introduction_to_battery_technologies.jpeg',
@@ -25,7 +25,7 @@ export class CoursesComponent implements OnInit {
       description: 'Explore foundational Battery Technologies with our comprehensive course. Gain insights, skills, and practical knowledge essential for todays energy innovation.',
       readmore: '../../assets/Course-Content/Introduction_to_Battery_Technologies.html',
       //price: '$100',
-      duration: '1 day'
+      duration: '3 days'
     },
     {
       img:'../../assets/Introduction_to_motor_technologies.jpeg',
@@ -34,7 +34,7 @@ export class CoursesComponent implements OnInit {
       description: 'Dive into the essentials of Motor Technologies with our introductory course. Discover motor design, operation, and real-world applications. Enroll today!',
       readmore: '../../assets/Course-Content/Introduction_to_Motor_Technologies.html',
       // price: '$100',
-      duration: '1 day'
+      duration: '3 days'
     },
     {
       img: '../../assets/Introduction_to_electric_vehicles_01.jpeg',
@@ -43,7 +43,7 @@ export class CoursesComponent implements OnInit {
       description: 'Unlock the fundamentals of Charging Technologies. Learn about charging infrastructure, standards, and emerging trends. Join our course for comprehensive insights!',
       readmore: '../../assets/Course-Content/Introduction_to_Charging_Technologies.html',
       // price: '$100',
-      duration: '1 day'
+      duration: '3 days'
     },
     {
       img: '../../assets/Introduction_to_bev_powertrain_simulations.jpeg',
@@ -52,7 +52,7 @@ export class CoursesComponent implements OnInit {
       description: 'Delve into BEV Powertrain Simulations with our expert-led course. Learn modeling, analysis, and optimization techniques for EV powertrains. Enroll for comprehensive insights!',
       readmore: '../../assets/Course-Content/Introduction_to_BEV_Powertrain_Simulations.html',
       // price: '$100',
-      duration: '1 day'
+      duration: '3 days'
     },
     {
       img: '../../assets/Battery Modeling.png',
@@ -61,7 +61,7 @@ export class CoursesComponent implements OnInit {
       description: 'Gain expertise in EV Battery Modeling with our comprehensive course. Learn simulation techniques, battery behavior, and optimization strategies. Enroll for professional advancement today!',
       readmore: '../../assets/Course-Content/Introduction_to_Battery_Modeling.html',
       // price: '$100',
-      duration: '1 day'
+      duration: '3 days'
     },
     {
       img: '../../assets/BMS Algorithms.png',
@@ -70,7 +70,7 @@ export class CoursesComponent implements OnInit {
       description: 'Dive into Battery Management Systems with our comprehensive course. Explore BMS architecture, algorithms, and integration. Enroll now for expert insights!',
       readmore: '../../assets/Course-Content/Introduction_to_Battery_Management_Systems.html',
       // price: '$100',
-      duration: '1 day'
+      duration: '3 days'
     },
     {
       img: '../../assets/vehicle_performance_analysis_01.jpeg',
@@ -79,7 +79,7 @@ export class CoursesComponent implements OnInit {
       description: 'Unlock insights into BEV Performance Analysis with our introductory course. Learn essential techniques for optimizing battery electric vehicle performance. Join IEV Technologies now!',
       readmore: '../../assets/Course-Content/Interoduction_to_BEV_Performance_Analysis.html',
       // price: '$100',
-      duration: '1 day'
+      duration: '3 days'
     },
   ];
   public intermediateCourseList: Array<any> = [
@@ -90,7 +90,7 @@ export class CoursesComponent implements OnInit {
       description: 'Explore advanced BEV Powertrain Simulation techniques in our Intermediate Level course, designed by IEV Technologies for aspiring electric vehicle engineers.',
       readmore: '../../assets/Course-Content/Intermediate_BEV_Powertrain_Simulation_Course.html',
       // price: '$100',
-      duration: '3 days'
+      duration: '1 week'
     },
     {
       img: '../../assets/ECM Battery Modeling.png',
@@ -99,7 +99,7 @@ export class CoursesComponent implements OnInit {
       description: 'Dive deeper into Li-Ion Battery Modeling with our Intermediate Level Course, mastering Equivalent Circuit-based techniques for advanced electric vehicle engineering. Join IEV Technologies today!',
       readmore: '../../assets/Course-Content/Intermediate_Course_on_EC_Modeling_of_Batteries',
       // price: '$100',
-      duration: '3 days'
+      duration: '1 week'
     },
   ];
  public advancedCourseList: Array<any> = [
