@@ -1,10 +1,9 @@
 .details-component{
     padding-top: 83px;
     .img-enroll{
-        background-size: cover; /* Cover the entire container */
+        background-size: contain; /* Cover the entire container */
         background-position: center; /* Center the background image */
         height: 500px;
-        width: 100%;
         position: relative;
         .container{
             height: 300px;
